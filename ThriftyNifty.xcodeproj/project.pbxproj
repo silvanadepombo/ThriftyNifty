@@ -17,6 +17,14 @@
 		60D0DAD9286B8CB8000E6EAB /* ThriftyNiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D0DAD8286B8CB8000E6EAB /* ThriftyNiftyTests.swift */; };
 		60D0DAE3286B8CB8000E6EAB /* ThriftyNiftyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D0DAE2286B8CB8000E6EAB /* ThriftyNiftyUITests.swift */; };
 		60D0DAE5286B8CB8000E6EAB /* ThriftyNiftyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D0DAE4286B8CB8000E6EAB /* ThriftyNiftyUITestsLaunchTests.swift */; };
+		E86BECBF286CA80900681D72 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BECBE286CA80900681D72 /* ViewController2.swift */; };
+		E86BECC1286CA90400681D72 /* NearestThriftStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BECC0286CA90400681D72 /* NearestThriftStore.swift */; };
+		E86BECC3286CA95200681D72 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BECC2286CA95200681D72 /* Information.swift */; };
+		E86BECC5286CA97F00681D72 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BECC4286CA97F00681D72 /* Donation.swift */; };
+		E86BECC7286CA9C400681D72 /* FashionBrands.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BECC6286CA9C400681D72 /* FashionBrands.swift */; };
+		E86BECC9286CA9ED00681D72 /* Pollution.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BECC8286CA9ED00681D72 /* Pollution.swift */; };
+		E86BECCB286CAA1B00681D72 /* sustainability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BECCA286CAA1B00681D72 /* sustainability.swift */; };
+		E86BECCD286CCDF900681D72 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BECCC286CCDF900681D72 /* Effect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		60D0DADE286B8CB8000E6EAB /* ThriftyNiftyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThriftyNiftyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D0DAE2286B8CB8000E6EAB /* ThriftyNiftyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftyNiftyUITests.swift; sourceTree = "<group>"; };
 		60D0DAE4286B8CB8000E6EAB /* ThriftyNiftyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftyNiftyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E86BECBE286CA80900681D72 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		E86BECC0286CA90400681D72 /* NearestThriftStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestThriftStore.swift; sourceTree = "<group>"; };
+		E86BECC2286CA95200681D72 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		E86BECC4286CA97F00681D72 /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		E86BECC6286CA9C400681D72 /* FashionBrands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionBrands.swift; sourceTree = "<group>"; };
+		E86BECC8286CA9ED00681D72 /* Pollution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pollution.swift; sourceTree = "<group>"; };
+		E86BECCA286CAA1B00681D72 /* sustainability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sustainability.swift; sourceTree = "<group>"; };
+		E86BECCC286CCDF900681D72 /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +121,18 @@
 				60D0DAC0286B8CAA000E6EAB /* SceneDelegate.swift */,
 				60D0DAC2286B8CAA000E6EAB /* ViewController.swift */,
 				60D0DAC4286B8CAA000E6EAB /* Main.storyboard */,
+				E86BECCC286CCDF900681D72 /* Effect.swift */,
+				E86BECCA286CAA1B00681D72 /* sustainability.swift */,
+				E86BECC8286CA9ED00681D72 /* Pollution.swift */,
+				E86BECC6286CA9C400681D72 /* FashionBrands.swift */,
+				E86BECC4286CA97F00681D72 /* Donation.swift */,
+				E86BECC2286CA95200681D72 /* Information.swift */,
+				E86BECC0286CA90400681D72 /* NearestThriftStore.swift */,
 				60D0DACA286B8CB7000E6EAB /* Assets.xcassets */,
 				60D0DACC286B8CB7000E6EAB /* LaunchScreen.storyboard */,
 				60D0DACF286B8CB7000E6EAB /* Info.plist */,
 				60D0DAC7286B8CAA000E6EAB /* ThriftyNifty.xcdatamodeld */,
+				E86BECBE286CA80900681D72 /* ViewController2.swift */,
 			);
 			path = ThriftyNifty;
 			sourceTree = "<group>";
@@ -261,10 +285,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86BECCD286CCDF900681D72 /* Effect.swift in Sources */,
+				E86BECBF286CA80900681D72 /* ViewController2.swift in Sources */,
+				E86BECC3286CA95200681D72 /* Information.swift in Sources */,
+				E86BECCB286CAA1B00681D72 /* sustainability.swift in Sources */,
+				E86BECC9286CA9ED00681D72 /* Pollution.swift in Sources */,
 				60D0DAC3286B8CAA000E6EAB /* ViewController.swift in Sources */,
 				60D0DAC9286B8CAA000E6EAB /* ThriftyNifty.xcdatamodeld in Sources */,
 				60D0DABF286B8CAA000E6EAB /* AppDelegate.swift in Sources */,
+				E86BECC5286CA97F00681D72 /* Donation.swift in Sources */,
+				E86BECC7286CA9C400681D72 /* FashionBrands.swift in Sources */,
 				60D0DAC1286B8CAA000E6EAB /* SceneDelegate.swift in Sources */,
+				E86BECC1286CA90400681D72 /* NearestThriftStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

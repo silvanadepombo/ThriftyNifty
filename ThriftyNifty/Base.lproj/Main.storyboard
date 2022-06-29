@@ -16,27 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1h-rT-7TL">
-                                <rect key="frame" x="89" y="214" width="236" height="221"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="nifty thrifty">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="88" name="GillSans"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xz-dc-Wdz">
                                 <rect key="frame" x="180" y="596" width="56" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Start"/>
                                 <connections>
-                                    <segue destination="Yjc-kw-j9u" kind="show" id="30u-fe-g2e"/>
+                                    <segue destination="Yjc-kw-j9u" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="30u-fe-g2e"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's begin with your way to sustainable fashion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4R-f5-g62">
@@ -44,6 +30,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thrifty Nifty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gd0-JA-M6E">
+                                <rect key="frame" x="63" y="203" width="288" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="31"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -55,12 +48,12 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="Al4-at-laL">
             <objects>
-                <viewController id="Yjc-kw-j9u" sceneMemberID="viewController">
+                <viewController id="Yjc-kw-j9u" customClass="ViewController2" customModule="ThriftyNifty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a4a-OF-Rzr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hM-Xi-KjB">
@@ -69,7 +62,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Find the nearest thrift store/sustainable store"/>
                                 <connections>
-                                    <segue destination="ahW-zc-nml" kind="show" id="uYo-CL-VEb"/>
+                                    <segue destination="ahW-zc-nml" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="uYo-CL-VEb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqv-Qt-nEK">
@@ -78,7 +71,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Information about fast fashion/sustainable fashion stores"/>
                                 <connections>
-                                    <segue destination="eI0-Oe-fv3" kind="show" id="fyq-G1-qId"/>
+                                    <segue destination="eI0-Oe-fv3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="fyq-G1-qId"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What do you want to do?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEm-Nz-gpe">
@@ -101,7 +94,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Donate your clothes"/>
                                 <connections>
-                                    <segue destination="uQ1-qh-wTJ" kind="show" id="jwI-5W-sQw"/>
+                                    <segue destination="W4J-JX-b4z" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Y8x-KH-fcZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -114,13 +107,58 @@
             </objects>
             <point key="canvasLocation" x="931.88405797101461" y="69.642857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Information-->
         <scene sceneID="m41-Op-0nt">
             <objects>
-                <viewController id="eI0-Oe-fv3" sceneMemberID="viewController">
+                <viewController id="eI0-Oe-fv3" customClass="Information" customModule="ThriftyNifty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="haG-p7-Srk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb4-E4-HF2">
+                                <rect key="frame" x="116" y="199" width="203" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Harmful Fashion Brands"/>
+                                <connections>
+                                    <segue destination="Hce-Rg-3zP" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="QcR-DI-1M7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IM-yi-nVh">
+                                <rect key="frame" x="116" y="333" width="203" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Textille Pollution"/>
+                                <connections>
+                                    <segue destination="lK5-Wp-h22" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Sig-Zu-gI4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnr-pf-lru">
+                                <rect key="frame" x="116" y="479" width="203" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="The importance of textile sustainability"/>
+                                <connections>
+                                    <segue destination="Muj-b5-0Dy" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="g2E-Xs-JTl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zr-fC-y44">
+                                <rect key="frame" x="116" y="607" width="203" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="The effects of donations and reusing"/>
+                                <connections>
+                                    <segue destination="JyZ-Y6-GFT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="S6k-ei-iS9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What would you like to learn about?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHy-Hs-GdW">
+                                <rect key="frame" x="33" y="37" width="348" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="de7-Zq-Gko"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -128,14 +166,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mfp-KT-WdN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1829" y="70"/>
+            <point key="canvasLocation" x="1828.985507246377" y="69.642857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Donation-->
+        <scene sceneID="fXt-Zb-auE">
+            <objects>
+                <viewController id="W4J-JX-b4z" customClass="Donation" customModule="ThriftyNifty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Hw-9r-6UA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sSp-VX-zNv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VOh-um-kBT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xv-cT-T8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="939"/>
+        </scene>
+        <!--Nearest Thrift Store-->
         <scene sceneID="SSc-p6-eiO">
             <objects>
-                <viewController id="ahW-zc-nml" sceneMemberID="viewController">
+                <viewController id="ahW-zc-nml" customClass="NearestThriftStore" customModule="ThriftyNifty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fje-xz-q15">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Jfd-sf-Leq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -146,21 +200,69 @@
             </objects>
             <point key="canvasLocation" x="1829" y="-689"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="RY9-Mt-M1p">
+        <!--Fashion Brands-->
+        <scene sceneID="P1v-yA-h4e">
             <objects>
-                <viewController id="uQ1-qh-wTJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xP3-49-eb2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                <viewController id="Hce-Rg-3zP" customClass="FashionBrands" customModule="ThriftyNifty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bu7-ty-E37">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="8X0-UH-1nO"/>
+                        <viewLayoutGuide key="safeArea" id="HeR-sx-kA4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="MlI-j8-DgT"/>
+                    <navigationItem key="navigationItem" id="Dax-mJ-Cyf"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oFc-qI-jep" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vSV-Fs-Nyj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1829" y="779"/>
+            <point key="canvasLocation" x="3009" y="-575"/>
+        </scene>
+        <!--Pollution-->
+        <scene sceneID="DR7-h5-5Ir">
+            <objects>
+                <viewController id="lK5-Wp-h22" customClass="Pollution" customModule="ThriftyNifty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t2N-ZB-3PU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="AsA-Ko-S7p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Ut-OC-5At"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xAS-WR-ux6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3764" y="-133"/>
+        </scene>
+        <!--Effect-->
+        <scene sceneID="PIs-ru-xWu">
+            <objects>
+                <viewController id="JyZ-Y6-GFT" customClass="Effect" customModule="ThriftyNifty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cmp-Mv-DQH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4cB-BP-3UV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="X4N-3O-E6W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t49-YA-HB6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3972" y="871"/>
+        </scene>
+        <!--Sustainability-->
+        <scene sceneID="jPh-mD-JCs">
+            <objects>
+                <viewController id="Muj-b5-0Dy" customClass="sustainability" customModule="ThriftyNifty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ea1-A8-J1o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6jf-Rx-fs7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="366-hl-cWb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GjO-X5-iq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2878" y="425"/>
         </scene>
     </scenes>
     <resources>

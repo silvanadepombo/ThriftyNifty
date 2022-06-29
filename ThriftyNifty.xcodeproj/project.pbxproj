@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1658BFB1286CE08B009C14DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1658BFB0286CE08B009C14DE /* MapKit.framework */; };
 		60D0DABF286B8CAA000E6EAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D0DABE286B8CAA000E6EAB /* AppDelegate.swift */; };
 		60D0DAC1286B8CAA000E6EAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D0DAC0286B8CAA000E6EAB /* SceneDelegate.swift */; };
 		60D0DAC3286B8CAA000E6EAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D0DAC2286B8CAA000E6EAB /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1658BFB0286CE08B009C14DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		60D0DABB286B8CAA000E6EAB /* ThriftyNifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThriftyNifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D0DABE286B8CAA000E6EAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60D0DAC0286B8CAA000E6EAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1658BFB1286CE08B009C14DE /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1658BFAF286CE08B009C14DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1658BFB0286CE08B009C14DE /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		60D0DAB2286B8CAA000E6EAB = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +112,7 @@
 				60D0DAD7286B8CB8000E6EAB /* ThriftyNiftyTests */,
 				60D0DAE1286B8CB8000E6EAB /* ThriftyNiftyUITests */,
 				60D0DABC286B8CAA000E6EAB /* Products */,
+				1658BFAF286CE08B009C14DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -480,6 +492,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,6 +520,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

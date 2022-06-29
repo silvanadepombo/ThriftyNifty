@@ -5,6 +5,7 @@
 //  Created by Roumiana Mihaylova on 6/29/22.
 //
 
+import MapKit
 import UIKit
 
 class NearestThriftStore: UIViewController {

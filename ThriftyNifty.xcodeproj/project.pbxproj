@@ -26,6 +26,8 @@
 		E86BECC9286CA9ED00681D72 /* Pollution.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BECC8286CA9ED00681D72 /* Pollution.swift */; };
 		E86BECCB286CAA1B00681D72 /* sustainability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BECCA286CAA1B00681D72 /* sustainability.swift */; };
 		E86BECCD286CCDF900681D72 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BECCC286CCDF900681D72 /* Effect.swift */; };
+		E86BECCF286E288400681D72 /* recycling.png in Resources */ = {isa = PBXBuildFile; fileRef = E86BECCE286E288400681D72 /* recycling.png */; };
+		E86BECD1286E28AB00681D72 /* textile pollution.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E86BECD0286E28AB00681D72 /* textile pollution.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		E86BECC8286CA9ED00681D72 /* Pollution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pollution.swift; sourceTree = "<group>"; };
 		E86BECCA286CAA1B00681D72 /* sustainability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sustainability.swift; sourceTree = "<group>"; };
 		E86BECCC286CCDF900681D72 /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		E86BECCE286E288400681D72 /* recycling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recycling.png; path = ../../../Desktop/recycling.png; sourceTree = "<group>"; };
+		E86BECD0286E28AB00681D72 /* textile pollution.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "textile pollution.jpeg"; path = "../../../Desktop/textile pollution.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 				E86BECC2286CA95200681D72 /* Information.swift */,
 				E86BECC0286CA90400681D72 /* NearestThriftStore.swift */,
 				60D0DACA286B8CB7000E6EAB /* Assets.xcassets */,
+				E86BECD0286E28AB00681D72 /* textile pollution.jpeg */,
+				E86BECCE286E288400681D72 /* recycling.png */,
 				60D0DACC286B8CB7000E6EAB /* LaunchScreen.storyboard */,
 				60D0DACF286B8CB7000E6EAB /* Info.plist */,
 				60D0DAC7286B8CAA000E6EAB /* ThriftyNifty.xcdatamodeld */,
@@ -270,6 +276,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86BECD1286E28AB00681D72 /* textile pollution.jpeg in Resources */,
+				E86BECCF286E288400681D72 /* recycling.png in Resources */,
 				60D0DACE286B8CB7000E6EAB /* LaunchScreen.storyboard in Resources */,
 				60D0DACB286B8CB7000E6EAB /* Assets.xcassets in Resources */,
 				60D0DAC6286B8CAA000E6EAB /* Main.storyboard in Resources */,

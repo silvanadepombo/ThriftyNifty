@@ -299,14 +299,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQY-VK-a2p">
                                 <rect key="frame" x="23" y="200" width="353" height="502"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">- Adds at least 500 products to its website each day, at very cheap prices: throw away culture
+                                <string key="text">- Adds at least 500 products to its website each day, at very cheap prices: throw away culture
 - Shein claims that: 
 “they use environmentally production methods with sustainably sourced materials”, yet this is unable to be confirmed as they don't share any information about where its products are made 
 -    “We strictly abide by child labor laws in each of the countries that we operate in. Neither we nor any of our partners are allowed to hire underage children. Any partners or vendors found to have violated these laws are terminated immediately and reported to the authorities.”  But these laws change according to different countries and regions. 
 - Low quality clothes that are not made to last
 - They use synthetic fabrics like polyester and nylon which are materials that do not decay: clothes will last longer in a landfill than in your closet
 - Doesn’t respect cultures and repeatedly steals art from small artists
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -486,6 +486,31 @@
                     <view key="view" contentMode="scaleToFill" id="t2N-ZB-3PU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxA-sV-SCT">
+                                <rect key="frame" x="34" y="229" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sV-SU-wL9">
+                                <rect key="frame" x="34" y="210" width="352" height="791"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">- Textile pollution is estimated to be responsible for about 20% of global clean water pollution from dyeing and finishing products
+- 0.5 million tons of microfibers from washing synthetics are released in the ocean every year. This accounts for 35% of primary microplastics released into the ocean every year.
+- 10% of global greenhouse emissions are due to textile and footwear production. This is something that can be minimized by ceasing overproduction.
+- About 30% of the clothes produced by retailers go on to never be purchased for every season. 
+- Globally, less than 1% of clothing is actually reused and recycled as clothing.
+- Americans toss 16 million tons worth of textiles a year, which is just over 6% of total municipal waste
+- While 4.3%  of clothes are exported overseas and another 14.5% are actually recycled, 18.7% are incinerated, and a staggering 62.5% are sent to landfills. 
+
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="AsA-Ko-S7p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -493,7 +518,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAS-WR-ux6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3271" y="88"/>
+            <point key="canvasLocation" x="3269.5652173913045" y="87.723214285714278"/>
         </scene>
         <!--Effect-->
         <scene sceneID="PIs-ru-xWu">
@@ -502,6 +527,22 @@
                     <view key="view" contentMode="scaleToFill" id="Cmp-Mv-DQH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Buc-r2-QVS">
+                                <rect key="frame" x="20" y="369" width="374" height="470"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">- Recycling textiles can keep materials out of landfills and incinerators as well as reduce the need for virgin fibers by extending the life of existing ones. 
+- Textiles are seperated by material and by color
+- Sorting by color will mean that no extra energy and dye will be used 
+- As for buttons and zippers, they are removed with special magnets so as to use them for future use
+- Synthetic fibers, such as polyesters and acrylics, are processed into polyester chips, which are plastic pellets that essentially become polyester again
+- Since almost two thirds of America’s clothing goes straight to landfills, it’s clear that we are producing way too much clothing to begin with. It is imperative that we listen to studies and control our production rates, so as to decrease the amount of material that essentially goes to waste. 
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4cB-BP-3UV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -509,7 +550,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t49-YA-HB6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1829" y="848"/>
+            <point key="canvasLocation" x="1828.985507246377" y="847.76785714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8Fw-5w-vFs">
@@ -528,6 +569,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="uYo-CL-VEb"/>
         <segue reference="wf5-9q-cDV"/>
     </inferredMetricsTieBreakers>
     <resources>

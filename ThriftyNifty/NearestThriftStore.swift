@@ -31,11 +31,39 @@ class NearestThriftStore: UIViewController {
     
     
     let locationManager = CLLocationManager()
-        let regionInMeters: Double = 10000
+        let regionInMeters: Double = 6100
         
         override func viewDidLoad() {
             super.viewDidLoad()
             checkLocationServices()
+            
+            let annotation1 = MKPointAnnotation()
+            annotation1.coordinate = CLLocationCoordinate2D(latitude: 40.7306907, longitude: -73.985738)
+            annotation1.title = "East Village Thrift Shop"
+            annotation1.subtitle = "Thrift Store"
+            mapView.addAnnotation(annotation1)
+            
+            
+            let annotation2 = MKPointAnnotation()
+            annotation2.coordinate = CLLocationCoordinate2D(latitude: 40.7392145, longitude: -73.983581)
+            annotation2.title = "Housing Works Thrift Shops - Gramercy"
+            annotation2.subtitle = "Thrift Store"
+            mapView.addAnnotation(annotation2)
+            
+            
+            let annotation3 = MKPointAnnotation()
+            annotation3.coordinate = CLLocationCoordinate2D(latitude: 40.74868392944336, longitude: -74.00062561035156)
+            annotation3.title = "City Opera Thrift Shop"
+            annotation3.subtitle = "Thrift Store"
+            mapView.addAnnotation(annotation3)
+            
+            
+            let annotation4 = MKPointAnnotation()
+            annotation4.coordinate = CLLocationCoordinate2D(latitude: 40.736116, longitude: -74.005060)
+            annotation4.title = "Rothy's"
+            annotation4.subtitle = "Sustainable Fashion"
+            mapView.addAnnotation(annotation4)
+
         }
         
         
@@ -91,6 +119,7 @@ class NearestThriftStore: UIViewController {
             guard let location = locations.last else { return }
             let region = MKCoordinateRegion.init(center: location.coordinate, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
             mapView.setRegion(region, animated: true)
+        
         }
         
         

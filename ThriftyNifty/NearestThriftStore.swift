@@ -14,6 +14,22 @@ class NearestThriftStore: UIViewController {
     
     @IBOutlet var mapView: MKMapView!
     
+    
+    @IBAction func tBackBtn(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func changeMapType(_ sender: UISegmentedControl) {
+        
+        if sender.selectedSegmentIndex == 0 {
+            mapView.mapType = .standard
+        } else {
+            mapView.mapType = .satellite
+        }
+    }
+    
+    
+    
     let locationManager = CLLocationManager()
         let regionInMeters: Double = 10000
         

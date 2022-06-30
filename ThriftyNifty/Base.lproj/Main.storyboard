@@ -577,6 +577,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="uYo-CL-VEb"/>
         <segue reference="wf5-9q-cDV"/>
     </inferredMetricsTieBreakers>
     <resources>

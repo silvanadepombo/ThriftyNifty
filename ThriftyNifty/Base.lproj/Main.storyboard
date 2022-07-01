@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -83,18 +84,12 @@
                                     <segue destination="eI0-Oe-fv3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="fyq-G1-qId"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you want to do?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEm-Nz-gpe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="What do you want to do?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEm-Nz-gpe">
                                 <rect key="frame" x="112" y="140" width="190" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZW-n6-tGC">
-                                <rect key="frame" x="0.0" y="33" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="1CC-fy-RrX"/>
-                                </items>
-                            </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paF-Wt-YUZ">
                                 <rect key="frame" x="112" y="554.5" width="191" height="31"/>
                                 <state key="normal" title="Button"/>
@@ -112,12 +107,8 @@
                             <constraint firstItem="jqv-Qt-nEK" firstAttribute="leading" secondItem="3Z7-gT-dn8" secondAttribute="leading" constant="112" id="9OI-ts-kQx"/>
                             <constraint firstItem="3Z7-gT-dn8" firstAttribute="trailing" secondItem="jqv-Qt-nEK" secondAttribute="trailing" constant="111" id="AMF-e8-tAP"/>
                             <constraint firstItem="jqv-Qt-nEK" firstAttribute="centerY" secondItem="a4a-OF-Rzr" secondAttribute="centerY" id="AvW-Av-zv1"/>
-                            <constraint firstItem="sZW-n6-tGC" firstAttribute="top" secondItem="a4a-OF-Rzr" secondAttribute="topMargin" constant="-11" id="Dkj-5e-9MJ"/>
-                            <constraint firstItem="sZW-n6-tGC" firstAttribute="leading" secondItem="3Z7-gT-dn8" secondAttribute="leading" id="DpN-F8-gJf"/>
                             <constraint firstItem="3Z7-gT-dn8" firstAttribute="trailing" secondItem="4hM-Xi-KjB" secondAttribute="trailing" constant="111" id="EBy-yW-8Up"/>
-                            <constraint firstItem="BEm-Nz-gpe" firstAttribute="top" secondItem="sZW-n6-tGC" secondAttribute="bottom" constant="63" id="EIO-NN-PHk"/>
                             <constraint firstItem="3Z7-gT-dn8" firstAttribute="trailing" secondItem="paF-Wt-YUZ" secondAttribute="trailing" constant="111" id="FUA-ff-aNj"/>
-                            <constraint firstItem="sZW-n6-tGC" firstAttribute="centerX" secondItem="BEm-Nz-gpe" secondAttribute="centerX" id="G5H-UI-JSB"/>
                             <constraint firstItem="3Z7-gT-dn8" firstAttribute="trailing" secondItem="4hM-Xi-KjB" secondAttribute="trailing" constant="111" id="H0X-x7-Sla"/>
                             <constraint firstItem="jqv-Qt-nEK" firstAttribute="leading" secondItem="3Z7-gT-dn8" secondAttribute="leading" constant="112" id="HRm-o1-lPC"/>
                             <constraint firstItem="paF-Wt-YUZ" firstAttribute="leading" secondItem="3Z7-gT-dn8" secondAttribute="leading" constant="112" id="ZGf-M7-fYZ"/>
@@ -262,99 +253,158 @@
             </objects>
             <point key="canvasLocation" x="916" y="-727"/>
         </scene>
-        <!--View Controller-->
+        <!--Mango-->
         <scene sceneID="qDP-4i-uzm">
             <objects>
-                <viewController id="vXU-5N-blU" sceneMemberID="viewController">
+                <viewController title="Mango" id="vXU-5N-blU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YTW-9T-ux3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mango" translatesAutoresizingMaskIntoConstraints="NO" id="alt-Oe-BKB">
+                                <rect key="frame" x="42" y="79" width="331" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mango" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-9c-SSy">
+                                <rect key="frame" x="154" y="20" width="106" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="36" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsi-Nk-UyG">
+                                <rect key="frame" x="42" y="289" width="331" height="451"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Has been making progress to become more sustainable but has still a long way to go.
+Joined the sustainable apparel coalition
+Mango has pledged to increase the proportion of sustainable fibers in its collections, working towards a goal of using 100% sustainably-sourced cotton in its garments by 2025. 
+No evidence of attempt to reduce greenhouse gas emissions
+Still fast fashion which creates a huge amount of waste that will be burned in landfills
+Pays their employees the minimum wage which can be very low in some countries and not the recommended wage
+Mango was amongst the retailers whose clothes were being manufactured at the Rana Plaza factory when it collapsed in April 2013, killing at least 1,127 people. 
+Mango fails to publish a full list of suppliers and no information about forced labor, gender equality and freedom of association. 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="is7-nw-aH2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Mm5-TZ-I6d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZN-54-DZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3241" y="-1631"/>
+            <point key="canvasLocation" x="2662" y="-1339"/>
         </scene>
         <!--Shein-->
         <scene sceneID="9YC-yu-w63">
             <objects>
                 <viewController title="Shein" id="5Is-a8-R8U" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eHp-hY-eG2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shein" translatesAutoresizingMaskIntoConstraints="NO" id="Efp-RJ-o39">
-                                <rect key="frame" x="5" y="60" width="389" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shein" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qng-eU-LRH">
-                                <rect key="frame" x="154" y="13" width="106" height="39"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1X-Nu-zXy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OsR-I6-OeW">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shein" translatesAutoresizingMaskIntoConstraints="NO" id="Kbj-Lq-Vee">
+                                                <rect key="frame" x="50" y="50" width="314" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="b4b-2K-yZA"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ar-JN-eig">
+                                                <rect key="frame" x="20" y="198" width="374" height="624"/>
+                                                <string key="text">Adds at least 500 products to its website each day, at very cheap prices: throw away culture
+Shein claims that: 
+“they use environmentally production methods with sustainably sourced materials”, yet this is unable to be confirmed as they don't share any information about where its products are made 
+“We strictly abide by child labor laws in each of the countries that we operate in. Neither we nor any of our partners are allowed to hire underage children. Any partners or vendors found to have violated these laws are terminated immediately and reported to the authorities.”  But these laws change according to different countries and regions. 
+Low quality clothes that are not made to last
+They use synthetic fabrics like polyester and nylon which are materials that do not decay: clothes will last longer in a landfill than in your closet
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Kbj-Lq-Vee" firstAttribute="leading" secondItem="OsR-I6-OeW" secondAttribute="leading" constant="50" id="0qw-DY-nwK"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kbj-Lq-Vee" secondAttribute="trailing" constant="50" id="B9F-Yg-u6T"/>
+                                            <constraint firstItem="8Ar-JN-eig" firstAttribute="leading" secondItem="OsR-I6-OeW" secondAttribute="leading" constant="20" id="ILN-qo-usr"/>
+                                            <constraint firstItem="Kbj-Lq-Vee" firstAttribute="top" secondItem="OsR-I6-OeW" secondAttribute="top" constant="50" id="JNP-gW-UwU"/>
+                                            <constraint firstAttribute="width" constant="414" id="KWL-KY-WyH"/>
+                                            <constraint firstAttribute="trailing" secondItem="8Ar-JN-eig" secondAttribute="trailing" constant="20" id="NuF-gY-vau"/>
+                                            <constraint firstAttribute="bottom" secondItem="8Ar-JN-eig" secondAttribute="bottom" constant="20" id="XUZ-KK-rDo"/>
+                                            <constraint firstItem="8Ar-JN-eig" firstAttribute="top" secondItem="Kbj-Lq-Vee" secondAttribute="bottom" constant="20" id="k8H-ug-Yim"/>
+                                            <constraint firstAttribute="height" constant="842" id="v1d-PG-Svc"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0I-se-Urh">
+                                        <rect key="frame" x="7" y="862" width="400" height="135"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="7bv-sU-Mbb"/>
+                                            <constraint firstAttribute="height" constant="135" id="Ih3-ri-wzp"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="293" id="zYa-VA-WLB"/>
+                                        </constraints>
+                                        <string key="text">As long as she isn't transparent about their whole production process, we are unable to believe their claims considering the amount of clothes they produce by day and their prices. </string>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="OsR-I6-OeW" secondAttribute="bottom" constant="197.5" id="7QV-HN-LdN"/>
+                                    <constraint firstItem="OsR-I6-OeW" firstAttribute="leading" secondItem="q1X-Nu-zXy" secondAttribute="leading" id="ZCU-kL-Bl9"/>
+                                    <constraint firstItem="OsR-I6-OeW" firstAttribute="top" secondItem="q1X-Nu-zXy" secondAttribute="top" id="eRD-Df-AOC"/>
+                                    <constraint firstItem="r0I-se-Urh" firstAttribute="centerX" secondItem="OsR-I6-OeW" secondAttribute="centerX" id="ean-H0-CRA"/>
+                                    <constraint firstItem="r0I-se-Urh" firstAttribute="top" secondItem="OsR-I6-OeW" secondAttribute="bottom" constant="20" id="n5B-R9-PNs"/>
+                                    <constraint firstAttribute="trailing" secondItem="OsR-I6-OeW" secondAttribute="trailing" id="uSI-xc-JIh"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJ8-mK-RYK">
+                                <rect key="frame" x="170" y="44" width="74" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQY-VK-a2p">
-                                <rect key="frame" x="23" y="200" width="353" height="502"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">- Adds at least 500 products to its website each day, at very cheap prices: throw away culture
-- Shein claims that: 
-“they use environmentally production methods with sustainably sourced materials”, yet this is unable to be confirmed as they don't share any information about where its products are made 
--    “We strictly abide by child labor laws in each of the countries that we operate in. Neither we nor any of our partners are allowed to hire underage children. Any partners or vendors found to have violated these laws are terminated immediately and reported to the authorities.”  But these laws change according to different countries and regions. 
-- Low quality clothes that are not made to last
-- They use synthetic fabrics like polyester and nylon which are materials that do not decay: clothes will last longer in a landfill than in your closet
-- Doesn’t respect cultures and repeatedly steals art from small artists
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38P-m6-bJR">
-                                <rect key="frame" x="13" y="697" width="381" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">As long as Shein isn't transparent about their whole production process, we are unable to believe their claims considering the amount of clothes they produce by day and their prices. </string>
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="Futura-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q1X-Nu-zXy">
-                                <rect key="frame" x="5" y="0.0" width="409" height="870"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Aiw-OV-i5W"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Mdq-NW-m3c"/>
-                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ptc-7J-Qva"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="q1X-Nu-zXy" firstAttribute="top" secondItem="Ptc-7J-Qva" secondAttribute="top" constant="44" id="F6z-q7-m2Y"/>
+                            <constraint firstAttribute="bottom" secondItem="q1X-Nu-zXy" secondAttribute="bottom" id="FaI-VP-R3w"/>
+                            <constraint firstAttribute="trailing" secondItem="q1X-Nu-zXy" secondAttribute="trailing" id="Gkb-KW-FGB"/>
+                            <constraint firstItem="q1X-Nu-zXy" firstAttribute="leading" secondItem="eHp-hY-eG2" secondAttribute="leading" id="p6w-c7-ajm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fOS-LG-pce"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H07-uA-Pjc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2174" y="-1285"/>
+            <point key="canvasLocation" x="1807" y="-1339"/>
         </scene>
         <!--H&M-->
         <scene sceneID="Blv-HZ-W5c">
             <objects>
                 <viewController title="H&amp;M" id="fi2-UG-KMg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BV3-tR-jSa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hym" translatesAutoresizingMaskIntoConstraints="NO" id="UoP-5s-GoQ">
-                                <rect key="frame" x="87" y="84" width="240" height="128"/>
+                                <rect key="frame" x="81" y="141" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS7-OU-SqC">
-                                <rect key="frame" x="54" y="274" width="307" height="209"/>
+                                <rect key="frame" x="54" y="333" width="307" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">- In 2018 this company failed to pay 850,000 employees a living wage and many female workers are physically and sexually abused.
 - H&amp;M has pledged that it will use 100% sustainable or recycled materials and reduce their greenhouse gas emissions by 2030.
@@ -364,7 +414,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqo-vs-l5M">
-                                <rect key="frame" x="34" y="463" width="347" height="225"/>
+                                <rect key="frame" x="34" y="544" width="347" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">H&amp;M is going with the right path environmentally but their workers conditions are still bad and haven't changed. 
 </string>
@@ -373,7 +423,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="H&amp;M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frK-1i-Z8l">
-                                <rect key="frame" x="171" y="20" width="73" height="39"/>
+                                <rect key="frame" x="171" y="73" width="73" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
@@ -389,35 +439,88 @@
             </objects>
             <point key="canvasLocation" x="1792.753623188406" y="-604.01785714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--aeropostale-->
         <scene sceneID="mNc-D7-6C2">
             <objects>
-                <viewController id="qfu-iZ-pm6" sceneMemberID="viewController">
+                <viewController title="aeropostale" id="qfu-iZ-pm6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gbt-3e-15D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aéropostale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUN-hy-Rz0">
+                                <rect key="frame" x="119" y="20" width="177" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aeropostale" translatesAutoresizingMaskIntoConstraints="NO" id="HDC-di-TR8">
+                                <rect key="frame" x="87" y="98" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3s-kx-iC9">
+                                <rect key="frame" x="20" y="275" width="374" height="513"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Aéropostale only uses a small proportion of organic materials such as organic cotton and hemp or recycled materials such as recycled polyester and recycled cotton. 
+Aéropostale dedicates very few of its collections to sustainable fashion. "Aero Impact" is its collection of sustainable clothing pieces made from organic fabrics and a mix of pre and post-consumer waste 
+Aéropostale is known to use sweatshops for the fabrication of its clothing items. It has been involved in child labor scandals as well. 
+The 2021 Fashion Transparency Index gave Aéropostale a score of only 3% based on how much the group discloses about its social and environmental policies, practices, and impacts. 
+The clothing retailer doesn't show any labor certification standard that ensures good working conditions, decent living wages, health, safety, and other crucial rights for workers in its supply chain. 
+We could say that this brand isn't sustainable nor ethical and doesn't seem to be working on a change</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zUg-1X-yfo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="W42-y2-H6l"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Gs-W7-ply" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4086" y="-1465"/>
+            <point key="canvasLocation" x="3457" y="-1047"/>
         </scene>
-        <!--View Controller-->
+        <!--Zara-->
         <scene sceneID="7Pd-Tm-Rmc">
             <objects>
-                <viewController id="obV-Hs-vYI" sceneMemberID="viewController">
+                <viewController title="Zara" id="obV-Hs-vYI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Glv-fw-gKv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6P-V2-YXf">
+                                <rect key="frame" x="177" y="20" width="60" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zara" translatesAutoresizingMaskIntoConstraints="NO" id="6vw-Mj-OGL">
+                                <rect key="frame" x="66" y="83" width="283" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BI-T8-Si4">
+                                <rect key="frame" x="66" y="301" width="283" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">There is no evidence in minimization of textile waste or in reduction of greenhouse gas emissions.
+Zara created the "Closing the loop" program which allows customers to drop off their used garnements so their clothes can have a second life
+has made little to no progress on payment of a living wage across its supply chain.
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zMq-xV-wa4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5dE-Rg-QOG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1P-GR-rcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4818" y="-1488"/>
+            <point key="canvasLocation" x="4375" y="-788"/>
         </scene>
         <!--Fashion Brands-->
         <scene sceneID="P1v-yA-h4e">
@@ -427,53 +530,127 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpq-ed-Ifj">
-                                <rect key="frame" x="254" y="420" width="105" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpq-ed-Ifj">
+                                <rect key="frame" x="257.5" y="432.5" width="101.5" height="31"/>
+                                <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Aéropostale"/>
+                                <connections>
+                                    <segue destination="qfu-iZ-pm6" kind="show" id="5gO-pg-LDS"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhC-Y8-W8i">
-                                <rect key="frame" x="63" y="580" width="105" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhC-Y8-W8i">
+                                <rect key="frame" x="77" y="605" width="106" height="31"/>
+                                <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Victoria's Secret"/>
+                                <connections>
+                                    <segue destination="LRu-gO-nIC" kind="show" id="NUv-XI-bEL"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3f-CF-t89">
-                                <rect key="frame" x="63" y="420" width="105" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3f-CF-t89">
+                                <rect key="frame" x="71" y="432" width="112" height="31"/>
+                                <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="H&amp;M"/>
                                 <connections>
-                                    <segue destination="fi2-UG-KMg" kind="show" id="3bd-J9-ice"/>
+                                    <segue destination="fi2-UG-KMg" kind="show" id="GFC-Ze-cyd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfN-kB-DhC">
-                                <rect key="frame" x="63" y="256" width="105" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfN-kB-DhC">
+                                <rect key="frame" x="258" y="605" width="102" height="31"/>
+                                <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Shein"/>
                                 <connections>
                                     <segue destination="5Is-a8-R8U" kind="show" id="UlE-6R-D5y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tr4-j6-bHF">
-                                <rect key="frame" x="254" y="580" width="105" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tr4-j6-bHF">
+                                <rect key="frame" x="77" y="207" width="101.5" height="31"/>
+                                <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Zara"/>
+                                <connections>
+                                    <segue destination="obV-Hs-vYI" kind="show" id="66b-mI-tq2"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJ1-fr-pEg">
-                                <rect key="frame" x="254" y="256" width="105" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJ1-fr-pEg">
+                                <rect key="frame" x="257.5" y="256" width="101.5" height="31"/>
+                                <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Mango"/>
+                                <connections>
+                                    <segue destination="vXU-5N-blU" kind="show" id="X7K-9P-kdR"/>
+                                </connections>
                             </button>
+                            <label autoresizesSubviews="NO" opaque="NO" multipleTouchEnabled="YES" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Quu-eP-XQu">
+                                <rect key="frame" x="20" y="703" width="374" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.47600102542585038" green="0.56862253202062074" blue="0.39394201282068447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="These are just some of the many brands that aren't sustainable or ethical, we encourage you to keep up researching ">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name=".SFNS-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.45490196078431372" green="0.59999999999999998" blue="0.46407524801912947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" red="0.47600102542585038" green="0.56862253202062074" blue="0.39394201282068447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho6-81-iof">
+                                <rect key="frame" x="99" y="74" width="216" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Harmful Brands">
+                                        <attributes>
+                                            <color key="NSColor" red="0.2627450980392157" green="0.55686274509803924" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="34" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HeR-sx-kA4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.63137254901960782" green="0.55686274509803924" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="leading" secondItem="SJ1-fr-pEg" secondAttribute="leading" constant="-180.5" id="1Kc-9i-5zh"/>
+                            <constraint firstItem="Gpq-ed-Ifj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="D3f-CF-t89" secondAttribute="trailing" constant="8" symbolic="YES" id="1qG-CX-TRK"/>
+                            <constraint firstItem="D3f-CF-t89" firstAttribute="leading" secondItem="HeR-sx-kA4" secondAttribute="leading" constant="71" id="2Jj-nz-fZt"/>
+                            <constraint firstItem="Gpq-ed-Ifj" firstAttribute="baseline" secondItem="D3f-CF-t89" secondAttribute="baseline" id="5ax-C1-LgF"/>
+                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="baseline" secondItem="nfN-kB-DhC" secondAttribute="baseline" constant="-349" id="8Ss-Of-DMT"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="leading" secondItem="Gpq-ed-Ifj" secondAttribute="leading" constant="-180.5" id="BnC-lU-5gn"/>
+                            <constraint firstItem="HeR-sx-kA4" firstAttribute="bottom" secondItem="Tr4-j6-bHF" secondAttribute="bottom" constant="575" id="Eod-Le-v4j"/>
+                            <constraint firstItem="Gpq-ed-Ifj" firstAttribute="centerY" secondItem="Bu7-ty-E37" secondAttribute="centerY" id="KRb-bk-6eY"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="baseline" secondItem="KhC-Y8-W8i" secondAttribute="baseline" constant="-357.5" id="TXQ-5S-cyv"/>
+                            <constraint firstItem="KhC-Y8-W8i" firstAttribute="leading" secondItem="HeR-sx-kA4" secondAttribute="leading" constant="77" id="V8S-DH-kNi"/>
+                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nfN-kB-DhC" secondAttribute="trailing" constant="-102.5" id="WeU-F4-acx"/>
+                            <constraint firstItem="HeR-sx-kA4" firstAttribute="trailing" secondItem="Tr4-j6-bHF" secondAttribute="trailing" constant="235.5" id="Xro-Ga-jbQ"/>
+                            <constraint firstItem="nfN-kB-DhC" firstAttribute="leading" secondItem="HeR-sx-kA4" secondAttribute="leading" constant="258" id="f1E-Mh-oSV"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="trailing" secondItem="SJ1-fr-pEg" secondAttribute="trailing" constant="-180.5" id="ifd-bo-VFl"/>
+                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="top" secondItem="HeR-sx-kA4" secondAttribute="top" constant="212" id="u5K-rF-pOM"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KhC-Y8-W8i" secondAttribute="trailing" constant="-130.5" id="uIO-Uf-cf7"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="trailing" secondItem="Gpq-ed-Ifj" secondAttribute="trailing" constant="-180.5" id="xnb-JY-5Vb"/>
+                        </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Back" width="59" id="LQl-e3-8sH">
+                            <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="default"/>
+                            <connections>
+                                <segue destination="eI0-Oe-fv3" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="64R-zD-g7A"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="Dax-mJ-Cyf"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSV-Fs-Nyj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -495,7 +672,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textile pollution" translatesAutoresizingMaskIntoConstraints="NO" id="aGm-bv-4MK">
-                                <rect key="frame" x="34" y="53" width="349" height="375"/>
+                                <rect key="frame" x="34" y="53" width="349" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sV-SU-wL9">
@@ -522,7 +699,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAS-WR-ux6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3269.5652173913045" y="87.723214285714278"/>
+            <point key="canvasLocation" x="2715.9420289855075" y="160.71428571428569"/>
         </scene>
         <!--Effect-->
         <scene sceneID="PIs-ru-xWu">
@@ -560,32 +737,69 @@
             </objects>
             <point key="canvasLocation" x="1828.985507246377" y="847.76785714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Victoria's Secret-->
         <scene sceneID="8Fw-5w-vFs">
             <objects>
-                <viewController id="LRu-gO-nIC" sceneMemberID="viewController">
+                <viewController title="Victoria's Secret" id="LRu-gO-nIC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kHg-dQ-xEd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Victoria's Secret" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXe-Gc-5b1">
+                                <rect key="frame" x="102" y="44" width="210" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfb-cE-O4u">
+                                <rect key="frame" x="64" y="328" width="287" height="410"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Uses few eco-friendly materials
+No evidence in: policy of minimizing the impacts of microplastics, minimizing textile waste, reducing greenhouse gas emissions. 
+Has been linked with cotton that comes from using Uyghur forced labor and has taken insufficient steps to remediate. 
+Received a rating of 21-30% in the 2021 fashion transparency index. 
+Their supply chains are not certified by labor standards which ensure worker health and safety, living wages and other labor rights.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="victorias secret" translatesAutoresizingMaskIntoConstraints="NO" id="z95-Uc-OHc">
+                                <rect key="frame" x="64" y="101" width="287" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="0QQ-9N-W4B"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="F30-Sw-4PU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BjP-MM-vmI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2597" y="-2082"/>
+            <point key="canvasLocation" x="3647.826086956522" y="-246.42857142857142"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="uYo-CL-VEb"/>
+        <segue reference="64R-zD-g7A"/>
         <segue reference="wf5-9q-cDV"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="aeropostale" width="948" height="450"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="hym" width="960" height="540"/>
+        <image name="mango" width="1268" height="846"/>
         <image name="recycling" width="1024" height="631"/>
         <image name="shein" width="1366" height="984"/>
         <image name="textile pollution" width="750" height="525"/>
+        <image name="victorias secret" width="747" height="420"/>
+        <image name="zara" width="275" height="183"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

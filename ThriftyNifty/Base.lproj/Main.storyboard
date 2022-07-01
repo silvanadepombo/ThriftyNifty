@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,30 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xz-dc-Wdz">
-                                <rect key="frame" x="157" y="612" width="103" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thrifty Nifty" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gd0-JA-M6E">
+                                <rect key="frame" x="64" y="173" width="288" height="220"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="68"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.78823529411764703" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="systemBrownColor"/>
+                                <size key="shadowOffset" width="5" height="-2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Let's begin with your way to sustainable fashion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4R-f5-g62">
+                                <rect key="frame" x="87" y="428" width="241" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xz-dc-Wdz">
+                                <rect key="frame" x="156" y="571" width="103" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="zcN-q7-WbO"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Start"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.6360421181" green="0.51688778400000002" blue="0.36817193030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="Yjc-kw-j9u" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="30u-fe-g2e"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thrifty Nifty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gd0-JA-M6E">
-                                <rect key="frame" x="63" y="203" width="288" height="39"/>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's begin with your way to sustainable fashion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4R-f5-g62">
-                                <rect key="frame" x="87" y="428" width="241" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.32941176470588235" green="0.45098039215686275" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Xz-dc-Wdz" secondAttribute="bottom" constant="100" id="2O2-Ht-JYR"/>
                             <constraint firstItem="gd0-JA-M6E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="LE4-cC-s9T"/>
                             <constraint firstItem="gd0-JA-M6E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="159" id="LSi-lZ-xo8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Xz-dc-Wdz" secondAttribute="bottom" constant="219" id="PcI-Hh-TUd"/>
@@ -67,7 +76,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hM-Xi-KjB">
                                 <rect key="frame" x="112" y="297.5" width="191" height="48"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Find the nearest thrift store/sustainable store"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Find the nearest thrift store/sustainable store">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="ahW-zc-nml" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="uYo-CL-VEb"/>
                                 </connections>
@@ -78,28 +90,36 @@
                                     <constraint firstAttribute="height" constant="85" id="JRU-PW-eFv"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Information about fast fashion/sustainable fashion stores"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Information about fast fashion/sustainable fashion stores">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="eI0-Oe-fv3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="fyq-G1-qId"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you want to do?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEm-Nz-gpe">
-                                <rect key="frame" x="112" y="140" width="190" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paF-Wt-YUZ">
                                 <rect key="frame" x="112" y="554.5" width="191" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Donate your clothes"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Donate your clothes">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="W4J-JX-b4z" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Y8x-KH-fcZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What do you want to do?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEm-Nz-gpe">
+                                <rect key="frame" x="87" y="149" width="241" height="81"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" red="0.10591233521699905" green="0.30494105815887451" blue="0.42074567079544067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" red="0.6360421181" green="0.51688778400000002" blue="0.36817193030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Z7-gT-dn8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.4760010254" green="0.63017762889999995" blue="0.45845461589999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jqv-Qt-nEK" firstAttribute="top" secondItem="4hM-Xi-KjB" secondAttribute="bottom" constant="60" id="4ah-o4-Url"/>
                             <constraint firstItem="BEm-Nz-gpe" firstAttribute="top" secondItem="3Z7-gT-dn8" secondAttribute="top" constant="96" id="7f4-kc-ogD"/>
@@ -135,9 +155,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="leafy green bckgrnd2 (1)" translatesAutoresizingMaskIntoConstraints="NO" id="pfS-Fc-Fzf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IM-yi-nVh">
                                 <rect key="frame" x="106" y="412" width="203" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.4004508853" green="0.52712452409999999" blue="0.62491214279999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Textille Pollution"/>
                                 <connections>
@@ -147,29 +172,24 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zr-fC-y44">
                                 <rect key="frame" x="106" y="584" width="203" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.4004508853" green="0.52712452409999999" blue="0.62491214279999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="The effects of donations and reusing"/>
                                 <connections>
                                     <segue destination="JyZ-Y6-GFT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="S6k-ei-iS9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="What would you like to learn about?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IHy-Hs-GdW">
-                                <rect key="frame" x="33" y="98" width="348" height="20.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb4-E4-HF2">
                                 <rect key="frame" x="106" y="255" width="203" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.4004508853" green="0.52712452409999999" blue="0.62491214279999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Harmful Fashion Brands"/>
                                 <connections>
                                     <segue destination="Hce-Rg-3zP" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="QcR-DI-1M7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1N-eI-KlE">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1N-eI-KlE">
                                 <rect key="frame" x="33" y="805" width="56" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Back"/>
@@ -178,15 +198,27 @@
                                     <segue destination="Yjc-kw-j9u" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="iCu-xb-HWL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOu-QK-lPD">
+                                <rect key="frame" x="87" y="129" width="241" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="What do you want to learn about?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.4772670269" green="0.2634081841" blue="0.081796221439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.087425507605075836" green="0.16941222548484802" blue="0.47165894508361816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.087425507605075836" green="0.16941222548484802" blue="0.47165894508361816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="2"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="de7-Zq-Gko"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IHy-Hs-GdW" firstAttribute="leading" secondItem="de7-Zq-Gko" secondAttribute="leading" constant="33" id="1iV-si-1dK"/>
-                            <constraint firstItem="de7-Zq-Gko" firstAttribute="trailing" secondItem="IHy-Hs-GdW" secondAttribute="trailing" constant="33" id="Cmr-NX-vXE"/>
-                            <constraint firstItem="M1N-eI-KlE" firstAttribute="leading" secondItem="IHy-Hs-GdW" secondAttribute="leading" id="xwI-QE-aPv"/>
                             <constraint firstItem="de7-Zq-Gko" firstAttribute="bottom" secondItem="M1N-eI-KlE" secondAttribute="bottom" constant="26" id="y0Z-lL-6fw"/>
-                            <constraint firstItem="IHy-Hs-GdW" firstAttribute="top" secondItem="de7-Zq-Gko" secondAttribute="top" constant="30" id="yTg-cD-ghe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8yx-Qy-kEO"/>
@@ -460,7 +492,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NkS-pJ-Yln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2057.971014492754" y="2061.1607142857142"/>
+            <point key="canvasLocation" x="1391" y="1600"/>
         </scene>
         <!--Nearest Thrift Store-->
         <scene sceneID="SSc-p6-eiO">
@@ -552,7 +584,7 @@ Mango fails to publish a full list of suppliers and no information about forced 
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="is7-nw-aH2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mm5-TZ-I6d"/>
                 </viewController>
@@ -594,7 +626,7 @@ They use synthetic fabrics like polyester and nylon which are materials that do 
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="Kbj-Lq-Vee" firstAttribute="leading" secondItem="OsR-I6-OeW" secondAttribute="leading" constant="50" id="0qw-DY-nwK"/>
                                             <constraint firstAttribute="trailing" secondItem="Kbj-Lq-Vee" secondAttribute="trailing" constant="50" id="B9F-Yg-u6T"/>
@@ -638,7 +670,7 @@ They use synthetic fabrics like polyester and nylon which are materials that do 
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ptc-7J-Qva"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <color key="tintColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="q1X-Nu-zXy" firstAttribute="top" secondItem="Ptc-7J-Qva" secondAttribute="top" constant="44" id="F6z-q7-m2Y"/>
@@ -703,7 +735,7 @@ They use synthetic fabrics like polyester and nylon which are materials that do 
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rRA-Kw-oYZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="GRz-aj-9FY"/>
                 </viewController>
@@ -719,13 +751,6 @@ They use synthetic fabrics like polyester and nylon which are materials that do 
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aéropostale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUN-hy-Rz0">
-                                <rect key="frame" x="119" y="44" width="177" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aeropostale" translatesAutoresizingMaskIntoConstraints="NO" id="HDC-di-TR8">
                                 <rect key="frame" x="87" y="120" width="240" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -743,9 +768,16 @@ We could say that this brand isn't sustainable nor ethical and doesn't seem to b
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aéropostale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUN-hy-Rz0">
+                                <rect key="frame" x="119" y="77" width="177" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zUg-1X-yfo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="W42-y2-H6l"/>
                 </viewController>
@@ -786,7 +818,7 @@ has made little to no progress on payment of a living wage across its supply cha
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zMq-xV-wa4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="5dE-Rg-QOG"/>
                 </viewController>
@@ -802,59 +834,66 @@ has made little to no progress on payment of a living wage across its supply cha
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpq-ed-Ifj">
-                                <rect key="frame" x="222" y="381" width="128" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="3hi-wj-hJI"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpq-ed-Ifj">
+                                <rect key="frame" x="230" y="374" width="138" height="50"/>
                                 <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Aéropostale"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Aéropostale">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.4772670269" green="0.2634081841" blue="0.081796221439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="qfu-iZ-pm6" kind="show" id="5gO-pg-LDS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhC-Y8-W8i">
-                                <rect key="frame" x="58" y="484" width="95" height="52"/>
+                                <rect key="frame" x="49" y="488" width="120" height="50"/>
                                 <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Victoria's Secret"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Victoria's Secret">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.4772670269" green="0.2634081841" blue="0.081796221439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="LRu-gO-nIC" kind="show" id="NUv-XI-bEL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3f-CF-t89">
-                                <rect key="frame" x="58" y="381" width="95" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfN-kB-DhC">
+                                <rect key="frame" x="230" y="488" width="138" height="50"/>
                                 <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="H&amp;M"/>
-                                <connections>
-                                    <segue destination="fi2-UG-KMg" kind="show" id="GFC-Ze-cyd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfN-kB-DhC">
-                                <rect key="frame" x="222" y="503" width="128" height="31"/>
-                                <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Shein"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Shein">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.4772670269" green="0.2634081841" blue="0.081796221439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="5Is-a8-R8U" kind="show" id="UlE-6R-D5y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tr4-j6-bHF">
-                                <rect key="frame" x="58" y="256" width="95" height="31"/>
+                                <rect key="frame" x="49" y="256" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="ghL-en-Cag"/>
+                                </constraints>
                                 <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Zara"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Zara">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.4772670269" green="0.2634081841" blue="0.081796221439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="obV-Hs-vYI" kind="show" id="66b-mI-tq2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJ1-fr-pEg">
-                                <rect key="frame" x="222" y="256" width="127" height="31"/>
+                                <rect key="frame" x="230" y="256" width="138" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Mango"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Mango">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.4772670269" green="0.2634081841" blue="0.081796221439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="vXU-5N-blU" kind="show" id="X7K-9P-kdR"/>
                                 </connections>
@@ -864,7 +903,7 @@ has made little to no progress on payment of a living wage across its supply cha
                                 <color key="backgroundColor" red="0.47600102542585038" green="0.56862253202062074" blue="0.39394201282068447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="107" id="3zi-Vx-Kpt"/>
+                                    <constraint firstAttribute="height" constant="107" id="dG4-rq-6cI"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="These are just some of the many brands that aren't sustainable or ethical, we encourage you to keep up researching ">
@@ -883,22 +922,22 @@ has made little to no progress on payment of a living wage across its supply cha
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho6-81-iof">
                                 <rect key="frame" x="99" y="74" width="216" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="iJz-uD-X6H"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Harmful Brands">
                                         <attributes>
-                                            <color key="NSColor" red="0.2627450980392157" green="0.55686274509803924" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="34" name="HelveticaNeue-Medium"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="34" name="GillSans"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNM-s0-oYn">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNM-s0-oYn">
                                 <rect key="frame" x="20" y="792" width="76" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="76" id="s2K-8t-4qP"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Back"/>
                                 <connections>
@@ -906,37 +945,51 @@ has made little to no progress on payment of a living wage across its supply cha
                                     <segue destination="eI0-Oe-fv3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="rJy-0k-nlx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3f-CF-t89">
+                                <rect key="frame" x="49" y="374" width="120" height="50"/>
+                                <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="H&amp;M">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.4772670269" green="0.2634081841" blue="0.081796221439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="fi2-UG-KMg" kind="show" id="GFC-Ze-cyd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HeR-sx-kA4"/>
                         <color key="backgroundColor" red="0.63137254901960782" green="0.55686274509803924" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="D3f-CF-t89" firstAttribute="top" secondItem="Tr4-j6-bHF" secondAttribute="bottom" constant="94" id="4o1-kW-qEE"/>
-                            <constraint firstItem="Quu-eP-XQu" firstAttribute="leading" secondItem="Bu7-ty-E37" secondAttribute="leadingMargin" id="5yn-eu-cfq"/>
-                            <constraint firstItem="Ho6-81-iof" firstAttribute="top" secondItem="HeR-sx-kA4" secondAttribute="top" constant="30" id="72T-kc-82T"/>
-                            <constraint firstItem="Ho6-81-iof" firstAttribute="leading" secondItem="HeR-sx-kA4" secondAttribute="leading" constant="99" id="8e6-TB-6WF"/>
-                            <constraint firstItem="KhC-Y8-W8i" firstAttribute="baseline" secondItem="nfN-kB-DhC" secondAttribute="baseline" id="B3M-CA-mfg"/>
-                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="leading" secondItem="D3f-CF-t89" secondAttribute="leading" id="DSj-Kc-aDK"/>
-                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="top" secondItem="Bu7-ty-E37" secondAttribute="top" constant="256" id="FqN-A1-Lp1"/>
-                            <constraint firstItem="D3f-CF-t89" firstAttribute="trailing" secondItem="KhC-Y8-W8i" secondAttribute="trailing" id="Fxl-3P-opO"/>
-                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="leading" secondItem="HeR-sx-kA4" secondAttribute="leading" constant="58" id="JnL-Df-cCJ"/>
-                            <constraint firstItem="Gpq-ed-Ifj" firstAttribute="trailing" secondItem="nfN-kB-DhC" secondAttribute="trailing" id="Jw7-wS-dll"/>
-                            <constraint firstItem="nfN-kB-DhC" firstAttribute="top" secondItem="Gpq-ed-Ifj" secondAttribute="bottom" constant="91" id="Pij-R9-9DO"/>
-                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="top" secondItem="Ho6-81-iof" secondAttribute="bottom" constant="66" id="PsH-cl-hYi"/>
-                            <constraint firstItem="KhC-Y8-W8i" firstAttribute="top" secondItem="D3f-CF-t89" secondAttribute="bottom" constant="72" id="Pve-BT-vH5"/>
-                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="leading" secondItem="Tr4-j6-bHF" secondAttribute="trailing" constant="69" id="QJM-N6-fWi"/>
-                            <constraint firstItem="FNM-s0-oYn" firstAttribute="leading" secondItem="Quu-eP-XQu" secondAttribute="leading" id="QPj-BM-4av"/>
-                            <constraint firstItem="HeR-sx-kA4" firstAttribute="bottom" secondItem="Quu-eP-XQu" secondAttribute="bottom" constant="79" id="WZp-O3-VfG"/>
-                            <constraint firstItem="FNM-s0-oYn" firstAttribute="top" secondItem="HeR-sx-kA4" secondAttribute="bottom" constant="-21" id="XC2-Gr-qKZ"/>
-                            <constraint firstItem="D3f-CF-t89" firstAttribute="leading" secondItem="KhC-Y8-W8i" secondAttribute="leading" id="Xtu-QQ-rPE"/>
-                            <constraint firstItem="HeR-sx-kA4" firstAttribute="trailing" secondItem="Gpq-ed-Ifj" secondAttribute="trailing" constant="64" id="fVR-u3-Z9w"/>
-                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="baseline" secondItem="SJ1-fr-pEg" secondAttribute="baseline" id="hW5-0o-M93"/>
-                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="trailing" secondItem="D3f-CF-t89" secondAttribute="trailing" id="iVX-s6-D1J"/>
-                            <constraint firstItem="Ho6-81-iof" firstAttribute="centerX" secondItem="Quu-eP-XQu" secondAttribute="centerX" id="jvv-fj-kpI"/>
-                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="centerX" secondItem="Gpq-ed-Ifj" secondAttribute="centerX" id="onL-1u-g8E"/>
-                            <constraint firstItem="D3f-CF-t89" firstAttribute="baseline" secondItem="Gpq-ed-Ifj" secondAttribute="baseline" id="pdK-Sg-5dN"/>
-                            <constraint firstItem="Ho6-81-iof" firstAttribute="centerX" secondItem="Bu7-ty-E37" secondAttribute="centerX" id="uuc-Gq-bRV"/>
-                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="leading" secondItem="Gpq-ed-Ifj" secondAttribute="leading" id="wNv-4x-Rh0"/>
-                            <constraint firstItem="Gpq-ed-Ifj" firstAttribute="leading" secondItem="nfN-kB-DhC" secondAttribute="leading" id="zyg-rg-59F"/>
+                            <constraint firstItem="Gpq-ed-Ifj" firstAttribute="leading" secondItem="nfN-kB-DhC" secondAttribute="leading" id="5Ti-pk-Gh6"/>
+                            <constraint firstItem="Ho6-81-iof" firstAttribute="leading" secondItem="HeR-sx-kA4" secondAttribute="leading" constant="99" id="AC0-9A-Zjh"/>
+                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="leading" secondItem="Gpq-ed-Ifj" secondAttribute="leading" id="BYe-Ea-2B3"/>
+                            <constraint firstItem="Ho6-81-iof" firstAttribute="top" secondItem="HeR-sx-kA4" secondAttribute="top" constant="30" id="Crx-pr-4Ke"/>
+                            <constraint firstAttribute="bottom" secondItem="Quu-eP-XQu" secondAttribute="bottom" constant="162" id="EKl-eQ-U5d"/>
+                            <constraint firstItem="Quu-eP-XQu" firstAttribute="leading" secondItem="Bu7-ty-E37" secondAttribute="leadingMargin" id="Hnc-1D-Vaq"/>
+                            <constraint firstItem="Quu-eP-XQu" firstAttribute="leading" secondItem="FNM-s0-oYn" secondAttribute="leading" id="HoL-R1-fH0"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="leading" secondItem="HeR-sx-kA4" secondAttribute="leading" constant="49" id="IMX-Ge-AFd"/>
+                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="leading" secondItem="Tr4-j6-bHF" secondAttribute="trailing" constant="61" id="IR7-2v-ZbB"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="leading" secondItem="D3f-CF-t89" secondAttribute="leading" id="Lcx-oi-B3M"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="trailing" secondItem="D3f-CF-t89" secondAttribute="trailing" id="NJv-Em-ApV"/>
+                            <constraint firstItem="KhC-Y8-W8i" firstAttribute="top" secondItem="D3f-CF-t89" secondAttribute="bottom" constant="64" id="OOT-E3-Eao"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="top" secondItem="Ho6-81-iof" secondAttribute="bottom" constant="66" id="Sem-Nt-HsQ"/>
+                            <constraint firstItem="Gpq-ed-Ifj" firstAttribute="trailing" secondItem="nfN-kB-DhC" secondAttribute="trailing" id="UIl-rK-myA"/>
+                            <constraint firstItem="Quu-eP-XQu" firstAttribute="top" secondItem="KhC-Y8-W8i" secondAttribute="bottom" constant="89" id="Xsu-8G-vSM"/>
+                            <constraint firstItem="D3f-CF-t89" firstAttribute="baseline" secondItem="Gpq-ed-Ifj" secondAttribute="baseline" id="bdT-rq-QoV"/>
+                            <constraint firstItem="D3f-CF-t89" firstAttribute="trailing" secondItem="KhC-Y8-W8i" secondAttribute="trailing" id="cFS-PQ-ZBF"/>
+                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="trailing" secondItem="Gpq-ed-Ifj" secondAttribute="trailing" id="cTX-hC-AeH"/>
+                            <constraint firstItem="Gpq-ed-Ifj" firstAttribute="baseline" secondItem="D3f-CF-t89" secondAttribute="firstBaseline" id="chy-oJ-HXa"/>
+                            <constraint firstItem="KhC-Y8-W8i" firstAttribute="top" secondItem="nfN-kB-DhC" secondAttribute="top" id="fO1-Y0-xM4"/>
+                            <constraint firstItem="D3f-CF-t89" firstAttribute="leading" secondItem="KhC-Y8-W8i" secondAttribute="leading" id="fRg-Uh-S1R"/>
+                            <constraint firstItem="Quu-eP-XQu" firstAttribute="centerX" secondItem="Ho6-81-iof" secondAttribute="centerX" id="ngd-07-oOn"/>
+                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="baseline" secondItem="Tr4-j6-bHF" secondAttribute="firstBaseline" id="pry-4e-Xeh"/>
+                            <constraint firstItem="KhC-Y8-W8i" firstAttribute="bottom" secondItem="nfN-kB-DhC" secondAttribute="bottom" id="rwR-iv-3rT"/>
+                            <constraint firstItem="Ho6-81-iof" firstAttribute="centerX" secondItem="Bu7-ty-E37" secondAttribute="centerX" id="s6W-Da-zJf"/>
+                            <constraint firstItem="D3f-CF-t89" firstAttribute="top" secondItem="Tr4-j6-bHF" secondAttribute="bottom" constant="68" id="t55-9W-N9D"/>
+                            <constraint firstItem="HeR-sx-kA4" firstAttribute="trailing" secondItem="SJ1-fr-pEg" secondAttribute="trailing" constant="56" id="tCC-TB-0jh"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="baseline" secondItem="SJ1-fr-pEg" secondAttribute="baseline" id="tEG-0y-R84"/>
+                            <constraint firstItem="FNM-s0-oYn" firstAttribute="top" secondItem="Quu-eP-XQu" secondAttribute="bottom" constant="58" id="zX3-CA-sgw"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -969,13 +1022,13 @@ has made little to no progress on payment of a living wage across its supply cha
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fr-aW-OBy">
                                 <rect key="frame" x="25" y="335" width="374" height="482"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">- Textile pollution is estimated to be responsible for about 20% of global clean water pollution from dyeing and finishing products
+                                <string key="text">- Textile pollution is estimated to be responsible for about 20% of global clean water pollution from dyeing and finishing products
 - 0.5 million tons of microfibers from washing synthetics are released in the ocean every year. This accounts for 35% of primary microplastics released into the ocean every year.
 - 10% of global greenhouse emissions are due to textile and footwear production. This is something that can be minimized by ceasing overproduction.
 - About 30% of the clothes produced by retailers go on to never be purchased for every season. 
 - Globally, less than 1% of clothing is actually reused and recycled as clothing.
 - Americans toss 16 million tons worth of textiles a year, which is just over 6% of total municipal waste
-- While 4.3%  of clothes are exported overseas and another 14.5% are actually recycled, 18.7% are incinerated, and a staggering 62.5% are sent to landfills. </mutableString>
+- While 4.3%  of clothes are exported overseas and another 14.5% are actually recycled, 18.7% are incinerated, and a staggering 62.5% are sent to landfills. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -992,7 +1045,7 @@ has made little to no progress on payment of a living wage across its supply cha
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AsA-Ko-S7p"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="3Ut-OC-5At"/>
                 </viewController>
@@ -1025,12 +1078,12 @@ has made little to no progress on payment of a living wage across its supply cha
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6G-bE-Jhi">
                                 <rect key="frame" x="20" y="314" width="374" height="463"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">- Recycling textiles can keep materials out of landfills and incinerators as well as reduce the need for virgin fibers by extending the life of existing ones. 
+                                <string key="text">- Recycling textiles can keep materials out of landfills and incinerators as well as reduce the need for virgin fibers by extending the life of existing ones. 
 - Textiles are separated by material and by color
 - Sorting by color will mean that no extra energy and dye will be used 
 - As for buttons and zippers, they are removed with special magnets so as to use them for future use
 - Synthetic fibers, such as polyesters and acrylics, are processed into polyester chips, which are plastic pellets that essentially become polyester again
-- Since almost two thirds of America’s clothing goes straight to landfills, it’s clear that we are producing way too much clothing to begin with. It is imperative that we listen to studies and control our production rates, so as to decrease the amount of material that essentially goes to waste.  </mutableString>
+- Since almost two thirds of America’s clothing goes straight to landfills, it’s clear that we are producing way too much clothing to begin with. It is imperative that we listen to studies and control our production rates, so as to decrease the amount of material that essentially goes to waste.  </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1079,7 +1132,7 @@ Their supply chains are not certified by labor standards which ensure worker hea
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0QQ-9N-W4B"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="F30-Sw-4PU"/>
                 </viewController>
@@ -1089,11 +1142,10 @@ Their supply chains are not certified by labor standards which ensure worker hea
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="GFC-Ze-cyd"/>
-        <segue reference="ozp-a8-Vsj"/>
+        <segue reference="QcR-DI-1M7"/>
         <segue reference="N0c-9g-Z49"/>
         <segue reference="rJy-0k-nlx"/>
-        <segue reference="iCu-xb-HWL"/>
+        <segue reference="30u-fe-g2e"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="219969" width="512" height="512"/>
@@ -1105,6 +1157,7 @@ Their supply chains are not certified by labor standards which ensure worker hea
         <image name="female_woman_people_person_avatar_black_tone_icon_159364" width="512" height="512"/>
         <image name="flat-faces-icons-circle-man-6" width="1024" height="1024"/>
         <image name="hym" width="960" height="540"/>
+        <image name="leafy green bckgrnd2 (1)" width="260" height="555"/>
         <image name="mango" width="1268" height="846"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="recycling" width="1024" height="631"/>
@@ -1115,8 +1168,14 @@ Their supply chains are not certified by labor standards which ensure worker hea
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

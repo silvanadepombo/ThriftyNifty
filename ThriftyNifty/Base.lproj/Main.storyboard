@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -84,7 +83,7 @@
                                     <segue destination="eI0-Oe-fv3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="fyq-G1-qId"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="What do you want to do?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEm-Nz-gpe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you want to do?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEm-Nz-gpe">
                                 <rect key="frame" x="112" y="140" width="190" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -103,6 +102,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jqv-Qt-nEK" firstAttribute="top" secondItem="4hM-Xi-KjB" secondAttribute="bottom" constant="60" id="4ah-o4-Url"/>
+                            <constraint firstItem="BEm-Nz-gpe" firstAttribute="top" secondItem="3Z7-gT-dn8" secondAttribute="top" constant="96" id="7f4-kc-ogD"/>
                             <constraint firstItem="3Z7-gT-dn8" firstAttribute="trailing" secondItem="paF-Wt-YUZ" secondAttribute="trailing" constant="111" id="95H-8m-Iet"/>
                             <constraint firstItem="jqv-Qt-nEK" firstAttribute="leading" secondItem="3Z7-gT-dn8" secondAttribute="leading" constant="112" id="9OI-ts-kQx"/>
                             <constraint firstItem="3Z7-gT-dn8" firstAttribute="trailing" secondItem="jqv-Qt-nEK" secondAttribute="trailing" constant="111" id="AMF-e8-tAP"/>
@@ -169,12 +169,23 @@
                                     <segue destination="Hce-Rg-3zP" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="QcR-DI-1M7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1N-eI-KlE">
+                                <rect key="frame" x="33" y="805" width="56" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Back"/>
+                                <connections>
+                                    <action selector="tBackBtn:" destination="ahW-zc-nml" eventType="touchUpInside" id="llC-f4-SrN"/>
+                                    <segue destination="Yjc-kw-j9u" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="iCu-xb-HWL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="de7-Zq-Gko"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="IHy-Hs-GdW" firstAttribute="leading" secondItem="de7-Zq-Gko" secondAttribute="leading" constant="33" id="1iV-si-1dK"/>
                             <constraint firstItem="de7-Zq-Gko" firstAttribute="trailing" secondItem="IHy-Hs-GdW" secondAttribute="trailing" constant="33" id="Cmr-NX-vXE"/>
+                            <constraint firstItem="M1N-eI-KlE" firstAttribute="leading" secondItem="IHy-Hs-GdW" secondAttribute="leading" id="xwI-QE-aPv"/>
+                            <constraint firstItem="de7-Zq-Gko" firstAttribute="bottom" secondItem="M1N-eI-KlE" secondAttribute="bottom" constant="26" id="y0Z-lL-6fw"/>
                             <constraint firstItem="IHy-Hs-GdW" firstAttribute="top" secondItem="de7-Zq-Gko" secondAttribute="top" constant="30" id="yTg-cD-ghe"/>
                         </constraints>
                     </view>
@@ -189,16 +200,267 @@
             <objects>
                 <viewController id="W4J-JX-b4z" customClass="Donation" customModule="ThriftyNifty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Hw-9r-6UA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1997"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PK2-4a-ymG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <color key="textShadowColor" systemColor="opaqueSeparatorColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="DONATE YOUR CLOTHES" id="mty-j4-vlR"/>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gM6-a3-UJh">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1849"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63g-U9-5rn">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="630"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="female_woman_people_person_avatar_black_tone_icon_159364" translatesAutoresizingMaskIntoConstraints="NO" id="2ql-TI-w6m">
+                                                <rect key="frame" x="8" y="8" width="75" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="6uu-ft-b1S"/>
+                                                    <constraint firstAttribute="width" constant="75" id="Mq0-ug-4Ef"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen_Shot_2022-06-30_at_10.57.20_PM-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="3ef-Vg-3sn">
+                                                <rect key="frame" x="45" y="125" width="324" height="325"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="325" id="6jk-ho-j6V"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.66666666666666663" green="0.78823529411764703" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="2ql-TI-w6m" firstAttribute="top" secondItem="63g-U9-5rn" secondAttribute="topMargin" id="3nP-6a-C0m"/>
+                                            <constraint firstItem="3ef-Vg-3sn" firstAttribute="top" secondItem="2ql-TI-w6m" secondAttribute="bottom" constant="53" id="DjT-90-fjQ"/>
+                                            <constraint firstItem="3ef-Vg-3sn" firstAttribute="centerX" secondItem="63g-U9-5rn" secondAttribute="centerX" id="TJy-5h-XQ8"/>
+                                            <constraint firstItem="3ef-Vg-3sn" firstAttribute="leading" secondItem="63g-U9-5rn" secondAttribute="leading" constant="45" id="rML-Zy-0LN"/>
+                                            <constraint firstAttribute="height" constant="630" id="uPR-sU-40Y"/>
+                                            <constraint firstItem="2ql-TI-w6m" firstAttribute="leading" secondItem="63g-U9-5rn" secondAttribute="leadingMargin" id="wZp-yS-mAu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAK-52-vAU">
+                                        <rect key="frame" x="0.0" y="630" width="414" height="630"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flat-faces-icons-circle-man-6" translatesAutoresizingMaskIntoConstraints="NO" id="gv5-7Q-rI3">
+                                                <rect key="frame" x="8" y="24" width="75" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="38j-wg-YZK"/>
+                                                    <constraint firstAttribute="height" constant="64" id="E2X-yD-ztO"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen_Shot_2022-06-30_at_10.56.57_PM-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="IAY-zD-4sa">
+                                                <rect key="frame" x="45" y="141" width="324" height="325"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="325" id="pdd-WL-RRt"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.44705882352941173" green="0.59215686274509804" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="IAY-zD-4sa" firstAttribute="top" secondItem="gv5-7Q-rI3" secondAttribute="bottom" constant="53" id="3f9-zI-zui"/>
+                                            <constraint firstItem="IAY-zD-4sa" firstAttribute="leading" secondItem="pAK-52-vAU" secondAttribute="leading" constant="45" id="Pa4-Lb-3bv"/>
+                                            <constraint firstItem="gv5-7Q-rI3" firstAttribute="top" secondItem="pAK-52-vAU" secondAttribute="top" constant="24" id="TdN-eX-gEP"/>
+                                            <constraint firstAttribute="height" constant="630" id="U2J-Jf-ROS"/>
+                                            <constraint firstItem="gv5-7Q-rI3" firstAttribute="leading" secondItem="pAK-52-vAU" secondAttribute="leadingMargin" id="XGz-dO-hSp"/>
+                                            <constraint firstItem="IAY-zD-4sa" firstAttribute="centerX" secondItem="pAK-52-vAU" secondAttribute="centerX" id="q6q-ar-Jo0"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8P-bb-1uv">
+                                        <rect key="frame" x="0.0" y="1260" width="414" height="630"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="219969" translatesAutoresizingMaskIntoConstraints="NO" id="EHQ-rb-S70">
+                                                <rect key="frame" x="8" y="38" width="75" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="3sh-Vd-B5j"/>
+                                                    <constraint firstAttribute="width" constant="75" id="H9l-zl-zX6"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen_Shot_2022-06-30_at_10.58.05_PM-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="Sws-tF-4YO">
+                                                <rect key="frame" x="45" y="155" width="324" height="325"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="325" id="4SY-Ew-a0u"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.66666666669999997" green="0.78823529410000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Sws-tF-4YO" firstAttribute="leading" secondItem="y8P-bb-1uv" secondAttribute="leading" constant="45" id="6R3-s0-q7e"/>
+                                            <constraint firstItem="Sws-tF-4YO" firstAttribute="top" secondItem="EHQ-rb-S70" secondAttribute="bottom" constant="53" id="95H-7v-WuB"/>
+                                            <constraint firstItem="EHQ-rb-S70" firstAttribute="leading" secondItem="y8P-bb-1uv" secondAttribute="leadingMargin" id="AlL-Rp-UIO"/>
+                                            <constraint firstItem="Sws-tF-4YO" firstAttribute="centerX" secondItem="y8P-bb-1uv" secondAttribute="centerX" id="FgY-z3-Vn6"/>
+                                            <constraint firstItem="EHQ-rb-S70" firstAttribute="top" secondItem="y8P-bb-1uv" secondAttribute="top" constant="38" id="T5i-2c-o5U"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="y8P-bb-1uv" firstAttribute="leading" secondItem="gM6-a3-UJh" secondAttribute="leading" id="13u-lz-QG3"/>
+                                    <constraint firstItem="63g-U9-5rn" firstAttribute="top" secondItem="gM6-a3-UJh" secondAttribute="top" id="3HW-vq-bHD"/>
+                                    <constraint firstItem="y8P-bb-1uv" firstAttribute="trailing" secondItem="pAK-52-vAU" secondAttribute="trailing" id="6Gt-Nf-mGy"/>
+                                    <constraint firstAttribute="bottom" secondItem="y8P-bb-1uv" secondAttribute="bottom" constant="-41" id="Dct-Hc-rwi"/>
+                                    <constraint firstItem="63g-U9-5rn" firstAttribute="centerX" secondItem="gM6-a3-UJh" secondAttribute="centerX" id="DuG-ht-rNf"/>
+                                    <constraint firstItem="pAK-52-vAU" firstAttribute="trailing" secondItem="63g-U9-5rn" secondAttribute="trailing" id="P9t-Az-R7B"/>
+                                    <constraint firstItem="y8P-bb-1uv" firstAttribute="leading" secondItem="pAK-52-vAU" secondAttribute="leading" id="Uil-jw-cGD"/>
+                                    <constraint firstItem="pAK-52-vAU" firstAttribute="leading" secondItem="63g-U9-5rn" secondAttribute="leading" id="ach-Ue-QAx"/>
+                                    <constraint firstItem="y8P-bb-1uv" firstAttribute="top" secondItem="pAK-52-vAU" secondAttribute="bottom" id="cXf-YW-OGU"/>
+                                    <constraint firstAttribute="bottom" secondItem="63g-U9-5rn" secondAttribute="bottom" constant="1219" id="fKu-wt-uxI"/>
+                                    <constraint firstAttribute="trailing" secondItem="y8P-bb-1uv" secondAttribute="trailing" id="gcO-n2-Afp"/>
+                                    <constraint firstItem="pAK-52-vAU" firstAttribute="top" secondItem="63g-U9-5rn" secondAttribute="bottom" id="ubp-vc-ris"/>
+                                </constraints>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10v-Wr-ley">
+                                <rect key="frame" x="1" y="1937" width="414" height="44"/>
+                                <items>
+                                    <navigationItem id="VR7-kW-zNN">
+                                        <nil key="title"/>
+                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="wMS-5S-sfJ">
+                                            <rect key="frame" x="105" y="5" width="204" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" red="0.45490196078431372" green="0.59999999999999998" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                            <connections>
+                                                <segue destination="D6E-Xw-3QX" kind="show" id="dQC-Se-eOW"/>
+                                            </connections>
+                                        </button>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIG-3I-WCT">
+                                <rect key="frame" x="11" y="1947" width="56" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Back"/>
+                                <connections>
+                                    <action selector="tBackBtn:" destination="ahW-zc-nml" eventType="touchUpInside" id="UX8-xB-wWO"/>
+                                    <segue destination="Yjc-kw-j9u" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="oFZ-Ex-6dQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="sSp-VX-zNv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PK2-4a-ymG" firstAttribute="trailing" secondItem="sSp-VX-zNv" secondAttribute="trailing" id="3HX-NW-YAj"/>
+                            <constraint firstItem="PK2-4a-ymG" firstAttribute="top" secondItem="sSp-VX-zNv" secondAttribute="top" id="AAG-5h-2ds"/>
+                            <constraint firstItem="10v-Wr-ley" firstAttribute="trailing" secondItem="sSp-VX-zNv" secondAttribute="trailing" constant="1" id="GpK-0j-Q3M"/>
+                            <constraint firstItem="PK2-4a-ymG" firstAttribute="leading" secondItem="sSp-VX-zNv" secondAttribute="leading" id="JIC-Ak-41e"/>
+                            <constraint firstItem="gM6-a3-UJh" firstAttribute="top" secondItem="PK2-4a-ymG" secondAttribute="bottom" id="Qmz-RK-qI4"/>
+                            <constraint firstItem="IIG-3I-WCT" firstAttribute="leading" secondItem="sSp-VX-zNv" secondAttribute="leading" constant="11" id="T08-g2-tOI"/>
+                            <constraint firstAttribute="bottom" secondItem="10v-Wr-ley" secondAttribute="bottom" constant="16" id="YBw-5w-6cl"/>
+                            <constraint firstItem="gM6-a3-UJh" firstAttribute="leading" secondItem="sSp-VX-zNv" secondAttribute="leading" id="ZYH-x5-iAJ"/>
+                            <constraint firstAttribute="trailing" secondItem="gM6-a3-UJh" secondAttribute="trailing" id="ebC-Fv-z6O"/>
+                            <constraint firstItem="10v-Wr-ley" firstAttribute="top" secondItem="gM6-a3-UJh" secondAttribute="bottom" id="eyY-Wz-nPy"/>
+                            <constraint firstItem="IIG-3I-WCT" firstAttribute="top" secondItem="gM6-a3-UJh" secondAttribute="bottom" constant="10" id="r3S-ga-Fb6"/>
+                            <constraint firstItem="10v-Wr-ley" firstAttribute="leading" secondItem="sSp-VX-zNv" secondAttribute="leading" constant="1" id="rXu-b4-Qnn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VOh-um-kBT"/>
+                    <size key="freeformSize" width="414" height="1997"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xv-cT-T8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="849"/>
+            <point key="canvasLocation" x="149" y="1252"/>
+        </scene>
+        <!--New Donation-->
+        <scene sceneID="3iC-UL-1AP">
+            <objects>
+                <viewController id="D6E-Xw-3QX" customClass="NewDonation" customModule="ThriftyNifty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gq5-Lm-yzr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add the Clothes You Want to Donate" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdb-Nr-vne">
+                                <rect key="frame" x="83" y="33" width="248" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDK-LI-2Ij">
+                                <rect key="frame" x="151" y="721" width="112" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                <connections>
+                                    <segue destination="W4J-JX-b4z" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="N0c-9g-Z49"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yj9-7j-vnI">
+                                <rect key="frame" x="192" y="171" width="163" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozc-uS-vjf">
+                                <rect key="frame" x="38" y="178" width="38" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xux-KV-YN1">
+                                <rect key="frame" x="38" y="249" width="37" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0fQ-xc-jP4">
+                                <rect key="frame" x="192" y="242" width="163" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Any Additional Descriptions:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8VM-TC-qvd">
+                                <rect key="frame" x="38" y="323" width="119" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D8W-sJ-WM7">
+                                <rect key="frame" x="192" y="323" width="163" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a Picture:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBc-Ek-50E">
+                                <rect key="frame" x="38" y="495" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cYA-tN-2w5">
+                                <rect key="frame" x="192" y="481" width="163" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSD-Oq-NRg">
+                                <rect key="frame" x="170" y="618" width="207" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Choose From Library.."/>
+                                <connections>
+                                    <action selector="addImage:" destination="D6E-Xw-3QX" eventType="touchUpInside" id="m9H-LE-DHe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b41-qq-4D3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Phy-Al-pcx"/>
+                    <connections>
+                        <outlet property="displayImage" destination="cYA-tN-2w5" id="QsC-LV-NYJ"/>
+                        <outlet property="imageView" destination="cYA-tN-2w5" id="OH6-Za-hw4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NkS-pJ-Yln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2057.971014492754" y="2061.1607142857142"/>
         </scene>
         <!--Nearest Thrift Store-->
         <scene sceneID="SSc-p6-eiO">
@@ -262,18 +524,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mango" translatesAutoresizingMaskIntoConstraints="NO" id="alt-Oe-BKB">
-                                <rect key="frame" x="42" y="79" width="331" height="160"/>
+                                <rect key="frame" x="42" y="128" width="331" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mango" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-9c-SSy">
-                                <rect key="frame" x="154" y="20" width="106" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="36" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsi-Nk-UyG">
-                                <rect key="frame" x="42" y="289" width="331" height="451"/>
+                                <rect key="frame" x="42" y="315" width="331" height="451"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Has been making progress to become more sustainable but has still a long way to go.
 Joined the sustainable apparel coalition
@@ -285,6 +540,13 @@ Mango was amongst the retailers whose clothes were being manufactured at the Ran
 Mango fails to publish a full list of suppliers and no information about forced labor, gender equality and freedom of association. 
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mango" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-9c-SSy">
+                                <rect key="frame" x="154" y="44" width="106" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -429,6 +691,16 @@ They use synthetic fabrics like polyester and nylon which are materials that do 
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdd-I9-nBF">
+                                <rect key="frame" x="24" y="762" width="76" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Back"/>
+                                <connections>
+                                    <action selector="tBackBtn:" destination="ahW-zc-nml" eventType="touchUpInside" id="sfx-ob-thh"/>
+                                    <segue destination="Hce-Rg-3zP" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ozp-a8-Vsj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rRA-Kw-oYZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -448,18 +720,18 @@ They use synthetic fabrics like polyester and nylon which are materials that do 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aéropostale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUN-hy-Rz0">
-                                <rect key="frame" x="119" y="20" width="177" height="35"/>
+                                <rect key="frame" x="119" y="44" width="177" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aeropostale" translatesAutoresizingMaskIntoConstraints="NO" id="HDC-di-TR8">
-                                <rect key="frame" x="87" y="98" width="240" height="128"/>
+                                <rect key="frame" x="87" y="120" width="240" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3s-kx-iC9">
-                                <rect key="frame" x="20" y="275" width="374" height="513"/>
+                                <rect key="frame" x="20" y="300" width="374" height="513"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Aéropostale only uses a small proportion of organic materials such as organic cotton and hemp or recycled materials such as recycled polyester and recycled cotton. 
 Aéropostale dedicates very few of its collections to sustainable fashion. "Aero Impact" is its collection of sustainable clothing pieces made from organic fabrics and a mix of pre and post-consumer waste 
@@ -479,7 +751,7 @@ We could say that this brand isn't sustainable nor ethical and doesn't seem to b
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Gs-W7-ply" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3457" y="-1047"/>
+            <point key="canvasLocation" x="3456.521739130435" y="-1047.3214285714284"/>
         </scene>
         <!--Zara-->
         <scene sceneID="7Pd-Tm-Rmc">
@@ -490,18 +762,14 @@ We could say that this brand isn't sustainable nor ethical and doesn't seem to b
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6P-V2-YXf">
-                                <rect key="frame" x="177" y="20" width="60" height="36"/>
+                                <rect key="frame" x="177" y="39" width="60" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zara" translatesAutoresizingMaskIntoConstraints="NO" id="6vw-Mj-OGL">
-                                <rect key="frame" x="66" y="83" width="283" height="177"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BI-T8-Si4">
-                                <rect key="frame" x="66" y="301" width="283" height="244"/>
+                                <rect key="frame" x="66" y="376" width="283" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">There is no evidence in minimization of textile waste or in reduction of greenhouse gas emissions.
 Zara created the "Closing the loop" program which allows customers to drop off their used garnements so their clothes can have a second life
@@ -512,6 +780,10 @@ has made little to no progress on payment of a living wage across its supply cha
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zara" translatesAutoresizingMaskIntoConstraints="NO" id="6vw-Mj-OGL">
+                                <rect key="frame" x="66" y="141" width="283" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zMq-xV-wa4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -520,7 +792,7 @@ has made little to no progress on payment of a living wage across its supply cha
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1P-GR-rcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4375" y="-788"/>
+            <point key="canvasLocation" x="4373.913043478261" y="-788.16964285714278"/>
         </scene>
         <!--Fashion Brands-->
         <scene sceneID="P1v-yA-h4e">
@@ -531,7 +803,10 @@ has made little to no progress on payment of a living wage across its supply cha
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpq-ed-Ifj">
-                                <rect key="frame" x="257.5" y="432.5" width="101.5" height="31"/>
+                                <rect key="frame" x="222" y="381" width="128" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="3hi-wj-hJI"/>
+                                </constraints>
                                 <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Aéropostale"/>
@@ -539,8 +814,8 @@ has made little to no progress on payment of a living wage across its supply cha
                                     <segue destination="qfu-iZ-pm6" kind="show" id="5gO-pg-LDS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhC-Y8-W8i">
-                                <rect key="frame" x="77" y="605" width="106" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhC-Y8-W8i">
+                                <rect key="frame" x="58" y="484" width="95" height="52"/>
                                 <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Victoria's Secret"/>
@@ -548,8 +823,8 @@ has made little to no progress on payment of a living wage across its supply cha
                                     <segue destination="LRu-gO-nIC" kind="show" id="NUv-XI-bEL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3f-CF-t89">
-                                <rect key="frame" x="71" y="432" width="112" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3f-CF-t89">
+                                <rect key="frame" x="58" y="381" width="95" height="31"/>
                                 <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="H&amp;M"/>
@@ -557,8 +832,8 @@ has made little to no progress on payment of a living wage across its supply cha
                                     <segue destination="fi2-UG-KMg" kind="show" id="GFC-Ze-cyd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfN-kB-DhC">
-                                <rect key="frame" x="258" y="605" width="102" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfN-kB-DhC">
+                                <rect key="frame" x="222" y="503" width="128" height="31"/>
                                 <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Shein"/>
@@ -567,7 +842,7 @@ has made little to no progress on payment of a living wage across its supply cha
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tr4-j6-bHF">
-                                <rect key="frame" x="77" y="207" width="101.5" height="31"/>
+                                <rect key="frame" x="58" y="256" width="95" height="31"/>
                                 <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Zara"/>
@@ -575,8 +850,8 @@ has made little to no progress on payment of a living wage across its supply cha
                                     <segue destination="obV-Hs-vYI" kind="show" id="66b-mI-tq2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJ1-fr-pEg">
-                                <rect key="frame" x="257.5" y="256" width="101.5" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJ1-fr-pEg">
+                                <rect key="frame" x="222" y="256" width="127" height="31"/>
                                 <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Mango"/>
@@ -584,15 +859,17 @@ has made little to no progress on payment of a living wage across its supply cha
                                     <segue destination="vXU-5N-blU" kind="show" id="X7K-9P-kdR"/>
                                 </connections>
                             </button>
-                            <label autoresizesSubviews="NO" opaque="NO" multipleTouchEnabled="YES" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Quu-eP-XQu">
-                                <rect key="frame" x="20" y="703" width="374" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label autoresizesSubviews="NO" opaque="NO" multipleTouchEnabled="YES" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Quu-eP-XQu">
+                                <rect key="frame" x="20" y="627" width="374" height="107"/>
                                 <color key="backgroundColor" red="0.47600102542585038" green="0.56862253202062074" blue="0.39394201282068447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="3zi-Vx-Kpt"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="These are just some of the many brands that aren't sustainable or ethical, we encourage you to keep up researching ">
                                         <attributes>
-                                            <font key="NSFont" size="17" name=".SFNS-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -604,9 +881,8 @@ has made little to no progress on payment of a living wage across its supply cha
                                     <color key="backgroundColor" red="0.47600102542585038" green="0.56862253202062074" blue="0.39394201282068447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho6-81-iof">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho6-81-iof">
                                 <rect key="frame" x="99" y="74" width="216" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Harmful Brands">
                                         <attributes>
@@ -618,37 +894,52 @@ has made little to no progress on payment of a living wage across its supply cha
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNM-s0-oYn">
+                                <rect key="frame" x="20" y="792" width="76" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="s2K-8t-4qP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Back"/>
+                                <connections>
+                                    <action selector="tBackBtn:" destination="ahW-zc-nml" eventType="touchUpInside" id="ytu-F4-tNW"/>
+                                    <segue destination="eI0-Oe-fv3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="rJy-0k-nlx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HeR-sx-kA4"/>
                         <color key="backgroundColor" red="0.63137254901960782" green="0.55686274509803924" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="leading" secondItem="SJ1-fr-pEg" secondAttribute="leading" constant="-180.5" id="1Kc-9i-5zh"/>
-                            <constraint firstItem="Gpq-ed-Ifj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="D3f-CF-t89" secondAttribute="trailing" constant="8" symbolic="YES" id="1qG-CX-TRK"/>
-                            <constraint firstItem="D3f-CF-t89" firstAttribute="leading" secondItem="HeR-sx-kA4" secondAttribute="leading" constant="71" id="2Jj-nz-fZt"/>
-                            <constraint firstItem="Gpq-ed-Ifj" firstAttribute="baseline" secondItem="D3f-CF-t89" secondAttribute="baseline" id="5ax-C1-LgF"/>
-                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="baseline" secondItem="nfN-kB-DhC" secondAttribute="baseline" constant="-349" id="8Ss-Of-DMT"/>
-                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="leading" secondItem="Gpq-ed-Ifj" secondAttribute="leading" constant="-180.5" id="BnC-lU-5gn"/>
-                            <constraint firstItem="HeR-sx-kA4" firstAttribute="bottom" secondItem="Tr4-j6-bHF" secondAttribute="bottom" constant="575" id="Eod-Le-v4j"/>
-                            <constraint firstItem="Gpq-ed-Ifj" firstAttribute="centerY" secondItem="Bu7-ty-E37" secondAttribute="centerY" id="KRb-bk-6eY"/>
-                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="baseline" secondItem="KhC-Y8-W8i" secondAttribute="baseline" constant="-357.5" id="TXQ-5S-cyv"/>
-                            <constraint firstItem="KhC-Y8-W8i" firstAttribute="leading" secondItem="HeR-sx-kA4" secondAttribute="leading" constant="77" id="V8S-DH-kNi"/>
-                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nfN-kB-DhC" secondAttribute="trailing" constant="-102.5" id="WeU-F4-acx"/>
-                            <constraint firstItem="HeR-sx-kA4" firstAttribute="trailing" secondItem="Tr4-j6-bHF" secondAttribute="trailing" constant="235.5" id="Xro-Ga-jbQ"/>
-                            <constraint firstItem="nfN-kB-DhC" firstAttribute="leading" secondItem="HeR-sx-kA4" secondAttribute="leading" constant="258" id="f1E-Mh-oSV"/>
-                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="trailing" secondItem="SJ1-fr-pEg" secondAttribute="trailing" constant="-180.5" id="ifd-bo-VFl"/>
-                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="top" secondItem="HeR-sx-kA4" secondAttribute="top" constant="212" id="u5K-rF-pOM"/>
-                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KhC-Y8-W8i" secondAttribute="trailing" constant="-130.5" id="uIO-Uf-cf7"/>
-                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="trailing" secondItem="Gpq-ed-Ifj" secondAttribute="trailing" constant="-180.5" id="xnb-JY-5Vb"/>
+                            <constraint firstItem="D3f-CF-t89" firstAttribute="top" secondItem="Tr4-j6-bHF" secondAttribute="bottom" constant="94" id="4o1-kW-qEE"/>
+                            <constraint firstItem="Quu-eP-XQu" firstAttribute="leading" secondItem="Bu7-ty-E37" secondAttribute="leadingMargin" id="5yn-eu-cfq"/>
+                            <constraint firstItem="Ho6-81-iof" firstAttribute="top" secondItem="HeR-sx-kA4" secondAttribute="top" constant="30" id="72T-kc-82T"/>
+                            <constraint firstItem="Ho6-81-iof" firstAttribute="leading" secondItem="HeR-sx-kA4" secondAttribute="leading" constant="99" id="8e6-TB-6WF"/>
+                            <constraint firstItem="KhC-Y8-W8i" firstAttribute="baseline" secondItem="nfN-kB-DhC" secondAttribute="baseline" id="B3M-CA-mfg"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="leading" secondItem="D3f-CF-t89" secondAttribute="leading" id="DSj-Kc-aDK"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="top" secondItem="Bu7-ty-E37" secondAttribute="top" constant="256" id="FqN-A1-Lp1"/>
+                            <constraint firstItem="D3f-CF-t89" firstAttribute="trailing" secondItem="KhC-Y8-W8i" secondAttribute="trailing" id="Fxl-3P-opO"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="leading" secondItem="HeR-sx-kA4" secondAttribute="leading" constant="58" id="JnL-Df-cCJ"/>
+                            <constraint firstItem="Gpq-ed-Ifj" firstAttribute="trailing" secondItem="nfN-kB-DhC" secondAttribute="trailing" id="Jw7-wS-dll"/>
+                            <constraint firstItem="nfN-kB-DhC" firstAttribute="top" secondItem="Gpq-ed-Ifj" secondAttribute="bottom" constant="91" id="Pij-R9-9DO"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="top" secondItem="Ho6-81-iof" secondAttribute="bottom" constant="66" id="PsH-cl-hYi"/>
+                            <constraint firstItem="KhC-Y8-W8i" firstAttribute="top" secondItem="D3f-CF-t89" secondAttribute="bottom" constant="72" id="Pve-BT-vH5"/>
+                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="leading" secondItem="Tr4-j6-bHF" secondAttribute="trailing" constant="69" id="QJM-N6-fWi"/>
+                            <constraint firstItem="FNM-s0-oYn" firstAttribute="leading" secondItem="Quu-eP-XQu" secondAttribute="leading" id="QPj-BM-4av"/>
+                            <constraint firstItem="HeR-sx-kA4" firstAttribute="bottom" secondItem="Quu-eP-XQu" secondAttribute="bottom" constant="79" id="WZp-O3-VfG"/>
+                            <constraint firstItem="FNM-s0-oYn" firstAttribute="top" secondItem="HeR-sx-kA4" secondAttribute="bottom" constant="-21" id="XC2-Gr-qKZ"/>
+                            <constraint firstItem="D3f-CF-t89" firstAttribute="leading" secondItem="KhC-Y8-W8i" secondAttribute="leading" id="Xtu-QQ-rPE"/>
+                            <constraint firstItem="HeR-sx-kA4" firstAttribute="trailing" secondItem="Gpq-ed-Ifj" secondAttribute="trailing" constant="64" id="fVR-u3-Z9w"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="baseline" secondItem="SJ1-fr-pEg" secondAttribute="baseline" id="hW5-0o-M93"/>
+                            <constraint firstItem="Tr4-j6-bHF" firstAttribute="trailing" secondItem="D3f-CF-t89" secondAttribute="trailing" id="iVX-s6-D1J"/>
+                            <constraint firstItem="Ho6-81-iof" firstAttribute="centerX" secondItem="Quu-eP-XQu" secondAttribute="centerX" id="jvv-fj-kpI"/>
+                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="centerX" secondItem="Gpq-ed-Ifj" secondAttribute="centerX" id="onL-1u-g8E"/>
+                            <constraint firstItem="D3f-CF-t89" firstAttribute="baseline" secondItem="Gpq-ed-Ifj" secondAttribute="baseline" id="pdK-Sg-5dN"/>
+                            <constraint firstItem="Ho6-81-iof" firstAttribute="centerX" secondItem="Bu7-ty-E37" secondAttribute="centerX" id="uuc-Gq-bRV"/>
+                            <constraint firstItem="SJ1-fr-pEg" firstAttribute="leading" secondItem="Gpq-ed-Ifj" secondAttribute="leading" id="wNv-4x-Rh0"/>
+                            <constraint firstItem="Gpq-ed-Ifj" firstAttribute="leading" secondItem="nfN-kB-DhC" secondAttribute="leading" id="zyg-rg-59F"/>
                         </constraints>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Back" width="59" id="LQl-e3-8sH">
-                            <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="default"/>
-                            <connections>
-                                <segue destination="eI0-Oe-fv3" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="64R-zD-g7A"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="Dax-mJ-Cyf"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -675,22 +966,30 @@ has made little to no progress on payment of a living wage across its supply cha
                                 <rect key="frame" x="34" y="53" width="349" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sV-SU-wL9">
-                                <rect key="frame" x="31" y="237" width="352" height="791"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fr-aW-OBy">
+                                <rect key="frame" x="25" y="335" width="374" height="482"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">- Textile pollution is estimated to be responsible for about 20% of global clean water pollution from dyeing and finishing products
+                                <mutableString key="text">- Textile pollution is estimated to be responsible for about 20% of global clean water pollution from dyeing and finishing products
 - 0.5 million tons of microfibers from washing synthetics are released in the ocean every year. This accounts for 35% of primary microplastics released into the ocean every year.
 - 10% of global greenhouse emissions are due to textile and footwear production. This is something that can be minimized by ceasing overproduction.
 - About 30% of the clothes produced by retailers go on to never be purchased for every season. 
 - Globally, less than 1% of clothing is actually reused and recycled as clothing.
 - Americans toss 16 million tons worth of textiles a year, which is just over 6% of total municipal waste
-- While 4.3%  of clothes are exported overseas and another 14.5% are actually recycled, 18.7% are incinerated, and a staggering 62.5% are sent to landfills. 
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+- While 4.3%  of clothes are exported overseas and another 14.5% are actually recycled, 18.7% are incinerated, and a staggering 62.5% are sent to landfills. </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXH-hO-VCi">
+                                <rect key="frame" x="25" y="825" width="74" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Back"/>
+                                <connections>
+                                    <action selector="tBackBtn:" destination="ahW-zc-nml" eventType="touchUpInside" id="x45-C8-Kpj"/>
+                                    <segue destination="eI0-Oe-fv3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="U17-fr-l5p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AsA-Ko-S7p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -709,24 +1008,33 @@ has made little to no progress on payment of a living wage across its supply cha
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Buc-r2-QVS">
-                                <rect key="frame" x="20" y="369" width="374" height="470"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">- Recycling textiles can keep materials out of landfills and incinerators as well as reduce the need for virgin fibers by extending the life of existing ones. 
-- Textiles are seperated by material and by color
-- Sorting by color will mean that no extra energy and dye will be used 
-- As for buttons and zippers, they are removed with special magnets so as to use them for future use
-- Synthetic fibers, such as polyesters and acrylics, are processed into polyester chips, which are plastic pellets that essentially become polyester again
-- Since almost two thirds of America’s clothing goes straight to landfills, it’s clear that we are producing way too much clothing to begin with. It is imperative that we listen to studies and control our production rates, so as to decrease the amount of material that essentially goes to waste. 
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="recycling" translatesAutoresizingMaskIntoConstraints="NO" id="SVh-Jc-wB1">
                                 <rect key="frame" x="27" y="53" width="367" height="308"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReH-Rr-Omp">
+                                <rect key="frame" x="27" y="804" width="76" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Back"/>
+                                <connections>
+                                    <action selector="tBackBtn:" destination="ahW-zc-nml" eventType="touchUpInside" id="n7c-ZN-HyD"/>
+                                    <segue destination="eI0-Oe-fv3" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ABg-uP-WYN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6G-bE-Jhi">
+                                <rect key="frame" x="20" y="314" width="374" height="463"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">- Recycling textiles can keep materials out of landfills and incinerators as well as reduce the need for virgin fibers by extending the life of existing ones. 
+- Textiles are separated by material and by color
+- Sorting by color will mean that no extra energy and dye will be used 
+- As for buttons and zippers, they are removed with special magnets so as to use them for future use
+- Synthetic fibers, such as polyesters and acrylics, are processed into polyester chips, which are plastic pellets that essentially become polyester again
+- Since almost two thirds of America’s clothing goes straight to landfills, it’s clear that we are producing way too much clothing to begin with. It is imperative that we listen to studies and control our production rates, so as to decrease the amount of material that essentially goes to waste.  </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4cB-BP-3UV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -745,15 +1053,8 @@ has made little to no progress on payment of a living wage across its supply cha
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Victoria's Secret" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXe-Gc-5b1">
-                                <rect key="frame" x="102" y="44" width="210" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfb-cE-O4u">
-                                <rect key="frame" x="64" y="328" width="287" height="410"/>
+                                <rect key="frame" x="64" y="369" width="287" height="410"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Uses few eco-friendly materials
 No evidence in: policy of minimizing the impacts of microplastics, minimizing textile waste, reducing greenhouse gas emissions. 
@@ -766,9 +1067,16 @@ Their supply chains are not certified by labor standards which ensure worker hea
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="victorias secret" translatesAutoresizingMaskIntoConstraints="NO" id="z95-Uc-OHc">
-                                <rect key="frame" x="64" y="101" width="287" height="166"/>
+                                <rect key="frame" x="64" y="161" width="287" height="166"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Victoria's Secret" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXe-Gc-5b1">
+                                <rect key="frame" x="102" y="68" width="210" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0QQ-9N-W4B"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -781,20 +1089,32 @@ Their supply chains are not certified by labor standards which ensure worker hea
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uYo-CL-VEb"/>
-        <segue reference="64R-zD-g7A"/>
-        <segue reference="wf5-9q-cDV"/>
+        <segue reference="GFC-Ze-cyd"/>
+        <segue reference="ozp-a8-Vsj"/>
+        <segue reference="N0c-9g-Z49"/>
+        <segue reference="rJy-0k-nlx"/>
+        <segue reference="iCu-xb-HWL"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="219969" width="512" height="512"/>
+        <image name="Screen_Shot_2022-06-30_at_10.56.57_PM-removebg-preview" width="549" height="454"/>
+        <image name="Screen_Shot_2022-06-30_at_10.57.20_PM-removebg-preview" width="482" height="518"/>
+        <image name="Screen_Shot_2022-06-30_at_10.58.05_PM-removebg-preview" width="442" height="565"/>
         <image name="aeropostale" width="948" height="450"/>
-        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="female_woman_people_person_avatar_black_tone_icon_159364" width="512" height="512"/>
+        <image name="flat-faces-icons-circle-man-6" width="1024" height="1024"/>
         <image name="hym" width="960" height="540"/>
         <image name="mango" width="1268" height="846"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="recycling" width="1024" height="631"/>
         <image name="shein" width="1366" height="984"/>
         <image name="textile pollution" width="750" height="525"/>
         <image name="victorias secret" width="747" height="420"/>
         <image name="zara" width="275" height="183"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

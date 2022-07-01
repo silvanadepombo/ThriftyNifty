@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1658BFB1286CE08B009C14DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1658BFB0286CE08B009C14DE /* MapKit.framework */; };
+		16DBF9D9286EB7630065CE68 /* NewDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DBF9D8286EB7630065CE68 /* NewDonation.swift */; };
 		60D0DABF286B8CAA000E6EAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D0DABE286B8CAA000E6EAB /* AppDelegate.swift */; };
 		60D0DAC1286B8CAA000E6EAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D0DAC0286B8CAA000E6EAB /* SceneDelegate.swift */; };
 		60D0DAC3286B8CAA000E6EAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D0DAC2286B8CAA000E6EAB /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		1658BFB0286CE08B009C14DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		16DBF9D8286EB7630065CE68 /* NewDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDonation.swift; sourceTree = "<group>"; };
 		60D0DABB286B8CAA000E6EAB /* ThriftyNifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThriftyNifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D0DABE286B8CAA000E6EAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60D0DAC0286B8CAA000E6EAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				E86BECC8286CA9ED00681D72 /* Pollution.swift */,
 				E86BECC6286CA9C400681D72 /* FashionBrands.swift */,
 				E86BECC4286CA97F00681D72 /* Donation.swift */,
+				16DBF9D8286EB7630065CE68 /* NewDonation.swift */,
 				E86BECC2286CA95200681D72 /* Information.swift */,
 				E86BECC0286CA90400681D72 /* NearestThriftStore.swift */,
 				60D0DACA286B8CB7000E6EAB /* Assets.xcassets */,
@@ -304,6 +307,7 @@
 				E86BECC9286CA9ED00681D72 /* Pollution.swift in Sources */,
 				60D0DAC3286B8CAA000E6EAB /* ViewController.swift in Sources */,
 				60D0DAC9286B8CAA000E6EAB /* ThriftyNifty.xcdatamodeld in Sources */,
+				16DBF9D9286EB7630065CE68 /* NewDonation.swift in Sources */,
 				60D0DABF286B8CAA000E6EAB /* AppDelegate.swift in Sources */,
 				E86BECC5286CA97F00681D72 /* Donation.swift in Sources */,
 				E86BECC7286CA9C400681D72 /* FashionBrands.swift in Sources */,

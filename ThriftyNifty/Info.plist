@@ -4,6 +4,8 @@
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Please allow to see current location.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please allow access to include an image.</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
